@@ -101,6 +101,11 @@
     [super dealloc];
 }
 
+- (BOOL)canDrawMapRect:(MKMapRect)mapRect
+             zoomScale:(MKZoomScale)zoomScale {
+	return YES;
+}
+
 - (void)drawMapRect:(MKMapRect)mapRect
           zoomScale:(MKZoomScale)zoomScale
           inContext:(CGContextRef)ctx
@@ -118,7 +123,7 @@
                    boundaries:&boundaries
                         count:&count];
     
-    CGContextSetAlpha(ctx, 0.7);
+    CGContextSetAlpha(ctx, 0.5);
     
     // For each grid value that is colorable, color in its corresponding
     // boundary MKMapRect with the appropriate color.

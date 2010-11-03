@@ -142,8 +142,8 @@
 {
     // Compute the boundingMapRect given the origin, the gridSize and the grid width and height
     
-    MKMapPoint upperLeft = MKMapPointForCoordinate(origin);
-    
+//    MKMapPoint upperLeft = MKMapPointForCoordinate(origin);
+	MKMapPoint upperLeft = MKMapPointMake(0,0);
     CLLocationCoordinate2D lowerRightCoord = 
         CLLocationCoordinate2DMake(origin.latitude - (gridSize * gridHeight),
                                    origin.longitude + (gridSize * gridWidth));
@@ -151,7 +151,7 @@
     MKMapPoint lowerRight = MKMapPointForCoordinate(lowerRightCoord);
     
     double width = lowerRight.x - upperLeft.x;
-    double height = lowerRight.y - upperLeft.y;
+    float height = lowerRight.y - upperLeft.y;
 
     MKMapRect bounds = MKMapRectMake(upperLeft.x, upperLeft.y, width, height);
     return bounds;
@@ -225,6 +225,10 @@
     
     *boundariesOut = boundaries;
     *valuesOut = values;
+}
+
+- (BOOL)intersectsMapRect:(MKMapRect)mapRect {
+	return YES;
 }
 
 @end

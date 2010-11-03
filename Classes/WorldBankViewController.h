@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface WorldBankViewController : UIViewController {
+@interface WorldBankViewController : UIViewController <MKMapViewDelegate> {
     IBOutlet MKMapView *map;
 
 }

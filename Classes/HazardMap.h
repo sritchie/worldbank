@@ -54,10 +54,10 @@
     CLLocationCoordinate2D origin; // position of upper left hazard
     CLLocationDegrees gridSize; // delta degrees for each square in the grid
     
-    int gridWidth;  // number of squares in the grid in the x direction
-    int gridHeight; // "" y direction
+    NSInteger gridWidth;  // number of squares in the grid in the x direction
+    NSInteger gridHeight; // "" y direction
     
-    float *grid; // actual hazard values in row-major order
+    CGFloat *grid; // actual hazard values in row-major order
 }
 
 // path points to a USGS earthquake hazard map grid file converted to binary
@@ -73,7 +73,7 @@
 // responsible for freeing both values and boundaries.
 - (void)hazardsInMapRect:(MKMapRect)rect
                  atScale:(MKZoomScale)scale
-                  values:(float **)values
+                  values:(CGFloat **)values
               boundaries:(MKMapRect **)boundaries
                    count:(int *)count;
 

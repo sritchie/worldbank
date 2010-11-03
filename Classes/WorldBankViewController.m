@@ -17,6 +17,8 @@
 {
     [super viewDidLoad];
     
+	[map setDelegate:self];
+	
     // Find and load the earthquake hazard grid from the application's bundle
     NSString *hazardPath = [[NSBundle mainBundle] pathForResource:@"mytestes"
                                                            ofType:@"bin"];
@@ -32,11 +34,21 @@
     [hazards release];
 }
 
+- (void)mapViewWillStartLoadingMap:(MKMapView *)mapView {
+	int x = 5;
+}
+
+- (void)mapViewDidFailLoadingMap:(MKMapView *)mapView withError:(NSError *)error {
+	int x = 5;
+
+}
+
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
 {
     HazardMapView *view = [[HazardMapView alloc] initWithOverlay:overlay];
     return [view autorelease];
 }
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
