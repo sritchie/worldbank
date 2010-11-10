@@ -20,7 +20,7 @@
 	[map setDelegate:self];
 	
     // Find and load the earthquake hazard grid from the application's bundle
-    NSString *hazardPath = [[NSBundle mainBundle] pathForResource:@"mytestes"
+    NSString *hazardPath = [[NSBundle mainBundle] pathForResource:@"raster"
                                                            ofType:@"bin"];
     HazardMap *hazards = [[HazardMap alloc] initWithHazardMapFile:hazardPath];
     
