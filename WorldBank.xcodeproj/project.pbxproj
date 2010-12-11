@@ -24,7 +24,7 @@
 		9507F973127D3D1A0033D35C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96C127D3D1A0033D35C /* Icon.png */; };
 		9507F974127D3D1A0033D35C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96D127D3D1A0033D35C /* Icon@2x.png */; };
 		9507F975127D3D1A0033D35C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96E127D3D1A0033D35C /* iTunesArtwork */; };
-		9507F97C127D3DCB0033D35C /* mytestes.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9507F97B127D3DCB0033D35C /* mytestes.bin */; };
+		9507F97C127D3DCB0033D35C /* raster.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9507F97B127D3DCB0033D35C /* raster.bin */; };
 		9507F984127D3E1B0033D35C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507F983127D3E1B0033D35C /* MapKit.framework */; };
 		9507F98A127D3E260033D35C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507F989127D3E260033D35C /* CoreLocation.framework */; };
 		95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */; };
@@ -56,7 +56,7 @@
 		9507F96C127D3D1A0033D35C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		9507F96D127D3D1A0033D35C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9507F96E127D3D1A0033D35C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
-		9507F97B127D3DCB0033D35C /* mytestes.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = mytestes.bin; sourceTree = "<group>"; };
+		9507F97B127D3DCB0033D35C /* raster.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = raster.bin; sourceTree = "<group>"; };
 		9507F983127D3E1B0033D35C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9507F989127D3E260033D35C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				9507F967127D3D1A0033D35C /* images */,
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				9507F97B127D3DCB0033D35C /* mytestes.bin */,
+				9507F97B127D3DCB0033D35C /* raster.bin */,
 				8D1107310486CEB800E47090 /* WorldBank-Info.plist */,
 			);
 			name = Resources;
@@ -206,7 +206,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Threadlock Design";
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Worldbank" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WorldBank" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -239,7 +239,7 @@
 				9507F973127D3D1A0033D35C /* Icon.png in Resources */,
 				9507F974127D3D1A0033D35C /* Icon@2x.png in Resources */,
 				9507F975127D3D1A0033D35C /* iTunesArtwork in Resources */,
-				9507F97C127D3DCB0033D35C /* mytestes.bin in Resources */,
+				9507F97C127D3DCB0033D35C /* raster.bin in Resources */,
 				95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Worldbank" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WorldBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
