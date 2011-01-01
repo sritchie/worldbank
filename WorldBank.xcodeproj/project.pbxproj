@@ -15,8 +15,6 @@
 		2899E5220DE3E06400AC0155 /* WorldBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* WorldBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* WorldBankViewController.m */; };
-		9507F963127D3D020033D35C /* HazardMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507F960127D3D020033D35C /* HazardMap.m */; };
-		9507F964127D3D020033D35C /* HazardMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9507F962127D3D020033D35C /* HazardMapView.m */; };
 		9507F96F127D3D1A0033D35C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F968127D3D1A0033D35C /* Icon-72.png */; };
 		9507F970127D3D1A0033D35C /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F969127D3D1A0033D35C /* Icon-Small-50.png */; };
 		9507F971127D3D1A0033D35C /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96A127D3D1A0033D35C /* Icon-Small.png */; };
@@ -24,10 +22,11 @@
 		9507F973127D3D1A0033D35C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96C127D3D1A0033D35C /* Icon.png */; };
 		9507F974127D3D1A0033D35C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96D127D3D1A0033D35C /* Icon@2x.png */; };
 		9507F975127D3D1A0033D35C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96E127D3D1A0033D35C /* iTunesArtwork */; };
-		9507F97C127D3DCB0033D35C /* raster.bin in Resources */ = {isa = PBXBuildFile; fileRef = 9507F97B127D3DCB0033D35C /* raster.bin */; };
 		9507F984127D3E1B0033D35C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507F983127D3E1B0033D35C /* MapKit.framework */; };
 		9507F98A127D3E260033D35C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507F989127D3E260033D35C /* CoreLocation.framework */; };
 		95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */; };
+		9561DFFB12CFEC8A00606E6B /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9561DFF812CFEC8A00606E6B /* TileOverlay.m */; };
+		9561DFFC12CFEC8A00606E6B /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +43,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* WorldBank_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldBank_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WorldBank-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WorldBank-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		9507F95F127D3D020033D35C /* HazardMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazardMap.h; sourceTree = "<group>"; };
-		9507F960127D3D020033D35C /* HazardMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazardMap.m; sourceTree = "<group>"; };
-		9507F961127D3D020033D35C /* HazardMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazardMapView.h; sourceTree = "<group>"; };
-		9507F962127D3D020033D35C /* HazardMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazardMapView.m; sourceTree = "<group>"; };
 		9507F965127D3D0A0033D35C /* compactgrid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compactgrid.c; sourceTree = "<group>"; };
 		9507F968127D3D1A0033D35C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		9507F969127D3D1A0033D35C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -56,10 +51,13 @@
 		9507F96C127D3D1A0033D35C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		9507F96D127D3D1A0033D35C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9507F96E127D3D1A0033D35C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
-		9507F97B127D3DCB0033D35C /* raster.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = raster.bin; sourceTree = "<group>"; };
 		9507F983127D3E1B0033D35C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9507F989127D3E260033D35C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		9561DFF712CFEC8A00606E6B /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
+		9561DFF812CFEC8A00606E6B /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
+		9561DFF912CFEC8A00606E6B /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayView.h; sourceTree = "<group>"; };
+		9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +79,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9507F95E127D3CF70033D35C /* Overlay */,
 				1D3623240D0F684500981E51 /* WorldBankAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WorldBankAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* WorldBankViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* WorldBankViewController.m */,
+				9561DFF712CFEC8A00606E6B /* TileOverlay.h */,
+				9561DFF812CFEC8A00606E6B /* TileOverlay.m */,
+				9561DFF912CFEC8A00606E6B /* TileOverlayView.h */,
+				9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -107,8 +108,6 @@
 				95577D8C1281BF13001EB084 /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				9507F983127D3E1B0033D35C /* MapKit.framework */,
-				9507F989127D3E260033D35C /* CoreLocation.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -126,10 +125,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9507F967127D3D1A0033D35C /* images */,
+				9507F967127D3D1A0033D35C /* Icons */,
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				9507F97B127D3DCB0033D35C /* raster.bin */,
 				8D1107310486CEB800E47090 /* WorldBank-Info.plist */,
 			);
 			name = Resources;
@@ -138,6 +136,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9507F983127D3E1B0033D35C /* MapKit.framework */,
+				9507F989127D3E260033D35C /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -145,18 +145,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9507F95E127D3CF70033D35C /* Overlay */ = {
-			isa = PBXGroup;
-			children = (
-				9507F95F127D3D020033D35C /* HazardMap.h */,
-				9507F960127D3D020033D35C /* HazardMap.m */,
-				9507F961127D3D020033D35C /* HazardMapView.h */,
-				9507F962127D3D020033D35C /* HazardMapView.m */,
-			);
-			name = Overlay;
-			sourceTree = "<group>";
-		};
-		9507F967127D3D1A0033D35C /* images */ = {
+		9507F967127D3D1A0033D35C /* Icons */ = {
 			isa = PBXGroup;
 			children = (
 				9507F968127D3D1A0033D35C /* Icon-72.png */,
@@ -167,6 +156,7 @@
 				9507F96D127D3D1A0033D35C /* Icon@2x.png */,
 				9507F96E127D3D1A0033D35C /* iTunesArtwork */,
 			);
+			name = Icons;
 			path = images;
 			sourceTree = "<group>";
 		};
@@ -188,6 +178,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				9561E1DD12CFEEC200606E6B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,7 +197,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Threadlock Design";
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Worldbank" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WorldBank" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -239,12 +230,27 @@
 				9507F973127D3D1A0033D35C /* Icon.png in Resources */,
 				9507F974127D3D1A0033D35C /* Icon@2x.png in Resources */,
 				9507F975127D3D1A0033D35C /* iTunesArtwork in Resources */,
-				9507F97C127D3DCB0033D35C /* raster.bin in Resources */,
 				95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9561E1DD12CFEEC200606E6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "RESOURCE_DIR=$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\n\ncp -R -n $PROJECT_DIR/TilesOne $RESOURCE_DIR/\ncp -R -n $PROJECT_DIR/TilesTwo $RESOURCE_DIR/\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -254,8 +260,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* WorldBankAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* WorldBankViewController.m in Sources */,
-				9507F963127D3D020033D35C /* HazardMap.m in Sources */,
-				9507F964127D3D020033D35C /* HazardMapView.m in Sources */,
+				9561DFFB12CFEC8A00606E6B /* TileOverlay.m in Sources */,
+				9561DFFC12CFEC8A00606E6B /* TileOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Worldbank" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WorldBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

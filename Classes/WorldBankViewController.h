@@ -11,8 +11,9 @@
 
 @interface WorldBankViewController : UIViewController <MKMapViewDelegate> {
     IBOutlet MKMapView *map;
-
 }
+
+@property (nonatomic, retain) MKMapView *map;
 
 @end
 
