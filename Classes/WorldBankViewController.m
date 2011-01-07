@@ -17,15 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	TileOverlay *overlay;
-	
-	NSArray *tileNames = [[NSArray alloc] initWithObjects:@"TilesOne", @"TilesTwo", nil];
-	for (NSString *name in tileNames) {
-		NSString *tileDirectory = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:name];
-		overlay = [[TileOverlay alloc] initWithTileDirectory:tileDirectory];
-		[self.map addOverlay:overlay];
-	}
+
+	NSString *tileDirectory = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"USGSTiles"];
+	TileOverlay *overlay = [[TileOverlay alloc] initWithTileDirectory:tileDirectory];
+	[self.map addOverlay:overlay];
 
 	// zoom in by a factor of two from the rect that contains the bounds
     // because MapKit always backs up to get to an integral zoom level so
