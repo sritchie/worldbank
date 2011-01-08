@@ -10,6 +10,11 @@
 #import "TileOverlay.h"
 #import "TileOverlayView.h"
 
+#import "OSMTileOverlay.h"
+#import "IUCNOverlay.h"
+#import "CustomOverlayView.h"
+#import "FormaOverlay.h"
+
 @implementation WorldBankViewController
 
 @synthesize map;
@@ -17,10 +22,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-	NSString *tileDirectory = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"USGSTiles"];
-	TileOverlay *overlay = [[TileOverlay alloc] initWithTileDirectory:tileDirectory];
-	[self.map addOverlay:overlay];
+		
+	OSMTileOverlay *overlay = [[OSMTileOverlay alloc] init];
+    [self.map addOverlay:overlay];
+	
+	IUCNOverlay *firstOverlay = [[IUCNOverlay alloc] init];
+    [self.map addOverlay:firstOverlay];
+    [firstOverlay release];
+	
+	FormaOverlay *secondOverlay = [[FormaOverlay alloc] init];
+    [self.map addOverlay:secondOverlay];
+    [secondOverlay release];
 
 	// zoom in by a factor of two from the rect that contains the bounds
     // because MapKit always backs up to get to an integral zoom level so
@@ -31,20 +43,19 @@
     visibleRect.size.height /= 2;
     visibleRect.origin.x += visibleRect.size.width / 2;
     visibleRect.origin.y += visibleRect.size.height / 2;
-    map.visibleMapRect = visibleRect;
+	
+	[self.map setVisibleMapRect:visibleRect];
     
     [overlay release]; // map is now keeping track of overlay
 }
 
-- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay;
 {
-    TileOverlayView *view = [[TileOverlayView alloc] initWithOverlay:overlay];
-    view.tileAlpha = 0.7;
-	NSLog(@"View Called!");
-    return [view autorelease];
+	CustomOverlayView *overlayView = [[[CustomOverlayView alloc] initWithOverlay:overlay] autorelease];
+    return overlayView;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
 {
     return YES;
 }

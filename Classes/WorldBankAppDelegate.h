@@ -6,8 +6,6 @@
 //  Copyright 2010 Threadlock Design. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @class WorldBankViewController;
 
 @interface WorldBankAppDelegate : NSObject <UIApplicationDelegate> {
@@ -17,6 +15,8 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet WorldBankViewController *viewController;
+
+-(void) prepareTileCache;
 
 @end
 

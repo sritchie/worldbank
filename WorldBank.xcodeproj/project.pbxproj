@@ -30,6 +30,12 @@
 		95F7491012D7AE58005042E9 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F7489112D7AE0B005042E9 /* libThree20Core.a */; };
 		95F7491112D7AE5A005042E9 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F748A512D7AE0B005042E9 /* libThree20Network.a */; };
 		95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F74A7412D7AF10005042E9 /* Three20.bundle */; };
+		95F74B3C12D7BDF0005042E9 /* OSMTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B3B12D7BDF0005042E9 /* OSMTileOverlay.m */; };
+		95F74B4712D7BE8A005042E9 /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B4612D7BE8A005042E9 /* CustomOverlayView.m */; };
+		95F74B7412D7C037005042E9 /* IUCNOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B7312D7C037005042E9 /* IUCNOverlay.m */; };
+		95F74B9F12D7D4C0005042E9 /* CustomUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */; };
+		95F74BBF12D80ADD005042E9 /* FormaOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74BBE12D80ADD005042E9 /* FormaOverlay.m */; };
+		95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95F74C7812D80FFE005042E9 /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,7 +153,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* WorldBank_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldBank_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WorldBank-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WorldBank-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		9507F965127D3D0A0033D35C /* compactgrid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compactgrid.c; sourceTree = "<group>"; };
 		9507F968127D3D1A0033D35C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		9507F969127D3D1A0033D35C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		9507F96A127D3D1A0033D35C /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
@@ -165,6 +170,19 @@
 		95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F74A7412D7AF10005042E9 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
+		95F74AE812D7B4B3005042E9 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = SOURCE_ROOT; };
+		95F74B3A12D7BDF0005042E9 /* OSMTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSMTileOverlay.h; path = Classes/OSMTileOverlay.h; sourceTree = SOURCE_ROOT; };
+		95F74B3B12D7BDF0005042E9 /* OSMTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSMTileOverlay.m; path = Classes/OSMTileOverlay.m; sourceTree = SOURCE_ROOT; };
+		95F74B4512D7BE8A005042E9 /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomOverlayView.h; path = Classes/CustomOverlayView.h; sourceTree = SOURCE_ROOT; };
+		95F74B4612D7BE8A005042E9 /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomOverlayView.m; path = Classes/CustomOverlayView.m; sourceTree = SOURCE_ROOT; };
+		95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlayProtocol.h; path = Classes/TileOverlayProtocol.h; sourceTree = SOURCE_ROOT; };
+		95F74B7212D7C037005042E9 /* IUCNOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IUCNOverlay.h; path = Classes/IUCNOverlay.h; sourceTree = SOURCE_ROOT; };
+		95F74B7312D7C037005042E9 /* IUCNOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IUCNOverlay.m; path = Classes/IUCNOverlay.m; sourceTree = SOURCE_ROOT; };
+		95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUISlider.h; sourceTree = "<group>"; };
+		95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUISlider.m; sourceTree = "<group>"; };
+		95F74BBD12D80ADD005042E9 /* FormaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormaOverlay.h; path = Classes/FormaOverlay.h; sourceTree = SOURCE_ROOT; };
+		95F74BBE12D80ADD005042E9 /* FormaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormaOverlay.m; path = Classes/FormaOverlay.m; sourceTree = SOURCE_ROOT; };
+		95F74C7812D80FFE005042E9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +206,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */,
 				1D3623240D0F684500981E51 /* WorldBankAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WorldBankAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* WorldBankViewController.h */,
@@ -196,6 +215,16 @@
 				9561DFF812CFEC8A00606E6B /* TileOverlay.m */,
 				9561DFF912CFEC8A00606E6B /* TileOverlayView.h */,
 				9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */,
+				95F74B4512D7BE8A005042E9 /* CustomOverlayView.h */,
+				95F74B4612D7BE8A005042E9 /* CustomOverlayView.m */,
+				95F74B7212D7C037005042E9 /* IUCNOverlay.h */,
+				95F74B7312D7C037005042E9 /* IUCNOverlay.m */,
+				95F74BBD12D80ADD005042E9 /* FormaOverlay.h */,
+				95F74BBE12D80ADD005042E9 /* FormaOverlay.m */,
+				95F74B3A12D7BDF0005042E9 /* OSMTileOverlay.h */,
+				95F74B3B12D7BDF0005042E9 /* OSMTileOverlay.m */,
+				95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */,
+				95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -226,9 +255,9 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				95F74AE812D7B4B3005042E9 /* CommonMacros.h */,
 				32CA4F630368D1EE00C91783 /* WorldBank_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				9507F965127D3D0A0033D35C /* compactgrid.c */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -241,6 +270,7 @@
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* WorldBank-Info.plist */,
+				95F74C7812D80FFE005042E9 /* Entitlements.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -316,7 +346,6 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				9561E1DD12CFEEC200606E6B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -469,26 +498,11 @@
 				9507F975127D3D1A0033D35C /* iTunesArtwork in Resources */,
 				95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */,
 				95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */,
+				95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9561E1DD12CFEEC200606E6B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "RESOURCE_DIR=$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\n\ncp -R -n $PROJECT_DIR/USGSTiles $RESOURCE_DIR/\n\nexit 0";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -500,6 +514,11 @@
 				28D7ACF80DDB3853001CB0EB /* WorldBankViewController.m in Sources */,
 				9561DFFB12CFEC8A00606E6B /* TileOverlay.m in Sources */,
 				9561DFFC12CFEC8A00606E6B /* TileOverlayView.m in Sources */,
+				95F74B3C12D7BDF0005042E9 /* OSMTileOverlay.m in Sources */,
+				95F74B4712D7BE8A005042E9 /* CustomOverlayView.m in Sources */,
+				95F74B7412D7C037005042E9 /* IUCNOverlay.m in Sources */,
+				95F74B9F12D7D4C0005042E9 /* CustomUISlider.m in Sources */,
+				95F74BBF12D80ADD005042E9 /* FormaOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +583,46 @@
 			};
 			name = Release;
 		};
+		95F74C3812D80FB9005042E9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		95F74C3912D80FB9005042E9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ThinkFun, Inc.";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WorldBank_Prefix.pch;
+				HEADER_SEARCH_PATHS = ./three20/Build/Products/three20;
+				INFOPLIST_FILE = "WorldBank-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = WorldBank;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D67D3E0E-E126-4941-BC0D-5BA41201DDBC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -599,6 +658,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				95F74C3912D80FB9005042E9 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -608,6 +668,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				95F74C3812D80FB9005042E9 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

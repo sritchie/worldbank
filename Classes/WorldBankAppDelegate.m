@@ -8,12 +8,14 @@
 
 #import "WorldBankAppDelegate.h"
 #import "WorldBankViewController.h"
+#import "Three20Network/Three20Network.h"
+
+#import "CommonMacros.h"
 
 @implementation WorldBankAppDelegate
 
 @synthesize window;
 @synthesize viewController;
-
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -21,8 +23,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
+	
+	[self prepareTileCache];
 
     return YES;
+}
+
+-(void) prepareTileCache;
+{
+	// ----- Set options for all URL requests
+    TTURLRequestQueue *queue = [[TTURLRequestQueue alloc] init];
+    [queue setMaxContentLength:0];
+    [TTURLRequestQueue setMainQueue:queue];
+    [queue release];
+    
+    TTURLCache *cache = [[TTURLCache alloc] initWithName:kTileCacheName];
+    cache.invalidationAge = 300.0f; // Five minutes
+    [TTURLCache setSharedCache:cache];
+    [cache release];
 }
 
 
@@ -79,6 +97,5 @@
     [window release];
     [super dealloc];
 }
-
 
 @end
