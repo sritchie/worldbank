@@ -1,10 +1,13 @@
-#import <MapKit/MapKit.h>
-#import "TileOverlayProtocol.h"
+//
+//  FormaOverlay.h
+//  WorldBank
+//
+//  Created by Samuel Ritchie on 1/8/11.
+//  Copyright 2011 Threadlock Design. All rights reserved.
+//
 
-/**
- * Tile layer that uses tiles from the OpenStreetMap project.
- */
-@interface FormaOverlay : NSObject <TileOverlay> {
-    CGFloat defaultAlpha;
-}
+#import "TileOverlay.h"
+
+@interface FormaOverlay : TileOverlay;
+
 @end

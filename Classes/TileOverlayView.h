@@ -1,20 +1,17 @@
-//     File: TileOverlayView.h
-// Abstract: 
-//     MKOverlayView subclass to display a raster tiled map overlay.
-//   
-//  Version: 1.0
-// 
-// Copyright (C) 2010 Apple Inc. All Rights Reserved.
-// 
-
-
 #import <MapKit/MapKit.h>
 
-
+/**
+ * The "view" for the tile layer.
+ *
+ * Essentially handles all of the heavy lifting: reprojection / data
+ * loading / processing / rendering.
+ */
 @interface TileOverlayView : MKOverlayView {
-    CGFloat tileAlpha;
 }
 
-@property (nonatomic, assign) CGFloat tileAlpha;
+-(void) performTileRequestWithURLString:(NSString *)urlString mapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale;
+
+
+- (BOOL)canDrawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale;
 
 @end

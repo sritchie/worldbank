@@ -6,6 +6,7 @@
  */
 
 #define kTileCacheName @"MapTileCache"
+#define TILE_SIZE 256.0
 
 #ifndef __IPHONE_3_2	// if iPhoneOS is 3.2 or greater then __IPHONE_3_2 will be defined
 
@@ -17,7 +18,6 @@ typedef enum {
 #define UI_USER_INTERFACE_IDIOM() UIUserInterfaceIdiomPhone
 
 #endif // ifndef __IPHONE_3_2
-
 
 static inline BOOL IsIPad()
 {

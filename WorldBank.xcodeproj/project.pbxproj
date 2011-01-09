@@ -24,14 +24,17 @@
 		9507F975127D3D1A0033D35C /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 9507F96E127D3D1A0033D35C /* iTunesArtwork */; };
 		9507F984127D3E1B0033D35C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507F983127D3E1B0033D35C /* MapKit.framework */; };
 		9507F98A127D3E260033D35C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507F989127D3E260033D35C /* CoreLocation.framework */; };
+		9530656212D9361D00B3B5B4 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530655F12D9361D00B3B5B4 /* NSDataAdditions.m */; };
+		9530656312D9361D00B3B5B4 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530656112D9361D00B3B5B4 /* TBXML.m */; };
+		9530656812D9363A00B3B5B4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9530656712D9363A00B3B5B4 /* libz.dylib */; };
+		9530656C12D9365900B3B5B4 /* formapoints.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9530656B12D9365900B3B5B4 /* formapoints.xml */; };
+		9530658412D9382300B3B5B4 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530658312D9382300B3B5B4 /* TileOverlay.m */; };
 		95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */; };
-		9561DFFB12CFEC8A00606E6B /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9561DFF812CFEC8A00606E6B /* TileOverlay.m */; };
-		9561DFFC12CFEC8A00606E6B /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */; };
 		95F7491012D7AE58005042E9 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F7489112D7AE0B005042E9 /* libThree20Core.a */; };
 		95F7491112D7AE5A005042E9 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F748A512D7AE0B005042E9 /* libThree20Network.a */; };
 		95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F74A7412D7AF10005042E9 /* Three20.bundle */; };
-		95F74B3C12D7BDF0005042E9 /* OSMTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B3B12D7BDF0005042E9 /* OSMTileOverlay.m */; };
-		95F74B4712D7BE8A005042E9 /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B4612D7BE8A005042E9 /* CustomOverlayView.m */; };
+		95F74B3C12D7BDF0005042E9 /* WorldLightOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B3B12D7BDF0005042E9 /* WorldLightOverlay.m */; };
+		95F74B4712D7BE8A005042E9 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B4612D7BE8A005042E9 /* TileOverlayView.m */; };
 		95F74B7412D7C037005042E9 /* IUCNOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B7312D7C037005042E9 /* IUCNOverlay.m */; };
 		95F74B9F12D7D4C0005042E9 /* CustomUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */; };
 		95F74BBF12D80ADD005042E9 /* FormaOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74BBE12D80ADD005042E9 /* FormaOverlay.m */; };
@@ -43,98 +46,98 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2 /* libThree20Core.a */;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
 			remoteInfo = Three20Core;
 		};
 		95F7489212D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6650CAA21262F6E2003FF804 /* libThree20Core-Xcode3.2.5.a */;
+			remoteGlobalIDString = 6650CAA21262F6E2003FF804;
 			remoteInfo = "Three20Core-Xcode3.2.5";
 		};
 		95F7489412D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 66C2E0FC1262F748006DF55A /* libThree20Core-Xcode3.2.2.a */;
+			remoteGlobalIDString = 66C2E0FC1262F748006DF55A;
 			remoteInfo = "Three20Core-Xcode3.2.2";
 		};
 		95F7489612D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C /* CoreUnitTests.octest */;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = Three20CoreUnitTests;
 		};
 		95F7489812D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 664961641262EE5000C2C80E /* CoreUnitTests-Xcode3.2.5.octest */;
+			remoteGlobalIDString = 664961641262EE5000C2C80E;
 			remoteInfo = "Three20CoreUnitTests-Xcode3.2.5";
 		};
 		95F7489A12D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 66F9A63C1262ED9F0059C2AE /* CoreUnitTests-Xcode3.2.2.octest */;
+			remoteGlobalIDString = 66F9A63C1262ED9F0059C2AE;
 			remoteInfo = "Three20CoreUnitTests-Xcode3.2.2";
 		};
 		95F748A412D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2 /* libThree20Network.a */;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
 			remoteInfo = Three20Network;
 		};
 		95F748A612D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 662D81EF12630516005851C2 /* libThree20Network-Xcode3.2.5.a */;
+			remoteGlobalIDString = 662D81EF12630516005851C2;
 			remoteInfo = "Three20Network-Xcode3.2.5";
 		};
 		95F748A812D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 662D821612630527005851C2 /* libThree20Network-Xcode3.2.2.a */;
+			remoteGlobalIDString = 662D821612630527005851C2;
 			remoteInfo = "Three20Network-Xcode3.2.2";
 		};
 		95F748AA12D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C /* NetworkUnitTests.octest */;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = Three20NetworkUnitTests;
 		};
 		95F748AC12D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 662D81B2126304EB005851C2 /* NetworkUnitTests-Xcode3.2.5.octest */;
+			remoteGlobalIDString = 662D81B2126304EB005851C2;
 			remoteInfo = "Three20NetworkUnitTests-Xcode3.2.5";
 		};
 		95F748AE12D7AE0B005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 662D81C7126304F3005851C2 /* NetworkUnitTests-Xcode3.2.2.octest */;
+			remoteGlobalIDString = 662D81C7126304F3005851C2;
 			remoteInfo = "Three20NetworkUnitTests-Xcode3.2.2";
 		};
 		95F7491712D7AE8D005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20Network */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20Network;
 		};
 		95F7491F12D7AE8D005042E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20Core */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20Core;
 		};
 /* End PBXContainerItemProxy section */
@@ -162,26 +165,30 @@
 		9507F96E127D3D1A0033D35C /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		9507F983127D3E1B0033D35C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9507F989127D3E260033D35C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9530655E12D9361D00B3B5B4 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		9530655F12D9361D00B3B5B4 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		9530656012D9361D00B3B5B4 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		9530656112D9361D00B3B5B4 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		9530656712D9363A00B3B5B4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9530656B12D9365900B3B5B4 /* formapoints.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = formapoints.xml; sourceTree = "<group>"; };
+		9530658212D9382300B3B5B4 /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
+		9530658312D9382300B3B5B4 /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
 		95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		9561DFF712CFEC8A00606E6B /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
-		9561DFF812CFEC8A00606E6B /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
-		9561DFF912CFEC8A00606E6B /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayView.h; sourceTree = "<group>"; };
-		9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlayView.m; sourceTree = "<group>"; };
 		95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F74A7412D7AF10005042E9 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		95F74AE812D7B4B3005042E9 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = SOURCE_ROOT; };
-		95F74B3A12D7BDF0005042E9 /* OSMTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSMTileOverlay.h; path = Classes/OSMTileOverlay.h; sourceTree = SOURCE_ROOT; };
-		95F74B3B12D7BDF0005042E9 /* OSMTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSMTileOverlay.m; path = Classes/OSMTileOverlay.m; sourceTree = SOURCE_ROOT; };
-		95F74B4512D7BE8A005042E9 /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomOverlayView.h; path = Classes/CustomOverlayView.h; sourceTree = SOURCE_ROOT; };
-		95F74B4612D7BE8A005042E9 /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomOverlayView.m; path = Classes/CustomOverlayView.m; sourceTree = SOURCE_ROOT; };
-		95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileOverlayProtocol.h; path = Classes/TileOverlayProtocol.h; sourceTree = SOURCE_ROOT; };
-		95F74B7212D7C037005042E9 /* IUCNOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IUCNOverlay.h; path = Classes/IUCNOverlay.h; sourceTree = SOURCE_ROOT; };
-		95F74B7312D7C037005042E9 /* IUCNOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IUCNOverlay.m; path = Classes/IUCNOverlay.m; sourceTree = SOURCE_ROOT; };
+		95F74B3A12D7BDF0005042E9 /* WorldLightOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldLightOverlay.h; sourceTree = "<group>"; };
+		95F74B3B12D7BDF0005042E9 /* WorldLightOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldLightOverlay.m; sourceTree = "<group>"; };
+		95F74B4512D7BE8A005042E9 /* TileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayView.h; sourceTree = "<group>"; };
+		95F74B4612D7BE8A005042E9 /* TileOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlayView.m; sourceTree = "<group>"; };
+		95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayProtocol.h; sourceTree = "<group>"; };
+		95F74B7212D7C037005042E9 /* IUCNOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUCNOverlay.h; sourceTree = "<group>"; };
+		95F74B7312D7C037005042E9 /* IUCNOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUCNOverlay.m; sourceTree = "<group>"; };
 		95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUISlider.h; sourceTree = "<group>"; };
 		95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUISlider.m; sourceTree = "<group>"; };
-		95F74BBD12D80ADD005042E9 /* FormaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormaOverlay.h; path = Classes/FormaOverlay.h; sourceTree = SOURCE_ROOT; };
-		95F74BBE12D80ADD005042E9 /* FormaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormaOverlay.m; path = Classes/FormaOverlay.m; sourceTree = SOURCE_ROOT; };
+		95F74BBD12D80ADD005042E9 /* FormaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaOverlay.h; sourceTree = "<group>"; };
+		95F74BBE12D80ADD005042E9 /* FormaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaOverlay.m; sourceTree = "<group>"; };
 		95F74C7812D80FFE005042E9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -197,6 +204,7 @@
 				9507F98A127D3E260033D35C /* CoreLocation.framework in Frameworks */,
 				95F7491012D7AE58005042E9 /* libThree20Core.a in Frameworks */,
 				95F7491112D7AE5A005042E9 /* libThree20Network.a in Frameworks */,
+				9530656812D9363A00B3B5B4 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +214,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */,
+				9530654F12D935F200B3B5B4 /* TBXML */,
 				1D3623240D0F684500981E51 /* WorldBankAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WorldBankAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* WorldBankViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* WorldBankViewController.m */,
-				9561DFF712CFEC8A00606E6B /* TileOverlay.h */,
-				9561DFF812CFEC8A00606E6B /* TileOverlay.m */,
-				9561DFF912CFEC8A00606E6B /* TileOverlayView.h */,
-				9561DFFA12CFEC8A00606E6B /* TileOverlayView.m */,
-				95F74B4512D7BE8A005042E9 /* CustomOverlayView.h */,
-				95F74B4612D7BE8A005042E9 /* CustomOverlayView.m */,
-				95F74B7212D7C037005042E9 /* IUCNOverlay.h */,
-				95F74B7312D7C037005042E9 /* IUCNOverlay.m */,
-				95F74BBD12D80ADD005042E9 /* FormaOverlay.h */,
-				95F74BBE12D80ADD005042E9 /* FormaOverlay.m */,
-				95F74B3A12D7BDF0005042E9 /* OSMTileOverlay.h */,
-				95F74B3B12D7BDF0005042E9 /* OSMTileOverlay.m */,
+				95F74B4512D7BE8A005042E9 /* TileOverlayView.h */,
+				95F74B4612D7BE8A005042E9 /* TileOverlayView.m */,
+				9530658512D9382C00B3B5B4 /* TileOverlays */,
 				95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */,
 				95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */,
 			);
@@ -248,6 +247,7 @@
 				95577D8C1281BF13001EB084 /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				9530656712D9363A00B3B5B4 /* libz.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -266,13 +266,14 @@
 			isa = PBXGroup;
 			children = (
 				95F74A7412D7AF10005042E9 /* Three20.bundle */,
-				9507F967127D3D1A0033D35C /* Icons */,
+				9530656B12D9365900B3B5B4 /* formapoints.xml */,
+				9507F967127D3D1A0033D35C /* Icon Images */,
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* WorldBank-Info.plist */,
 				95F74C7812D80FFE005042E9 /* Entitlements.plist */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -287,7 +288,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9507F967127D3D1A0033D35C /* Icons */ = {
+		9507F967127D3D1A0033D35C /* Icon Images */ = {
 			isa = PBXGroup;
 			children = (
 				9507F968127D3D1A0033D35C /* Icon-72.png */,
@@ -298,8 +299,34 @@
 				9507F96D127D3D1A0033D35C /* Icon@2x.png */,
 				9507F96E127D3D1A0033D35C /* iTunesArtwork */,
 			);
-			name = Icons;
-			path = images;
+			path = "Icon Images";
+			sourceTree = "<group>";
+		};
+		9530654F12D935F200B3B5B4 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				9530655E12D9361D00B3B5B4 /* NSDataAdditions.h */,
+				9530655F12D9361D00B3B5B4 /* NSDataAdditions.m */,
+				9530656012D9361D00B3B5B4 /* TBXML.h */,
+				9530656112D9361D00B3B5B4 /* TBXML.m */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+		9530658512D9382C00B3B5B4 /* TileOverlays */ = {
+			isa = PBXGroup;
+			children = (
+				95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */,
+				9530658212D9382300B3B5B4 /* TileOverlay.h */,
+				9530658312D9382300B3B5B4 /* TileOverlay.m */,
+				95F74B7212D7C037005042E9 /* IUCNOverlay.h */,
+				95F74B7312D7C037005042E9 /* IUCNOverlay.m */,
+				95F74BBD12D80ADD005042E9 /* FormaOverlay.h */,
+				95F74BBE12D80ADD005042E9 /* FormaOverlay.m */,
+				95F74B3A12D7BDF0005042E9 /* WorldLightOverlay.h */,
+				95F74B3B12D7BDF0005042E9 /* WorldLightOverlay.m */,
+			);
+			name = TileOverlays;
 			sourceTree = "<group>";
 		};
 		95577D8C1281BF13001EB084 /* Resources-iPad */ = {
@@ -499,6 +526,7 @@
 				95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */,
 				95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */,
 				95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */,
+				9530656C12D9365900B3B5B4 /* formapoints.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,13 +540,14 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* WorldBankAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* WorldBankViewController.m in Sources */,
-				9561DFFB12CFEC8A00606E6B /* TileOverlay.m in Sources */,
-				9561DFFC12CFEC8A00606E6B /* TileOverlayView.m in Sources */,
-				95F74B3C12D7BDF0005042E9 /* OSMTileOverlay.m in Sources */,
-				95F74B4712D7BE8A005042E9 /* CustomOverlayView.m in Sources */,
+				95F74B3C12D7BDF0005042E9 /* WorldLightOverlay.m in Sources */,
+				95F74B4712D7BE8A005042E9 /* TileOverlayView.m in Sources */,
 				95F74B7412D7C037005042E9 /* IUCNOverlay.m in Sources */,
 				95F74B9F12D7D4C0005042E9 /* CustomUISlider.m in Sources */,
 				95F74BBF12D80ADD005042E9 /* FormaOverlay.m in Sources */,
+				9530656212D9361D00B3B5B4 /* NSDataAdditions.m in Sources */,
+				9530656312D9361D00B3B5B4 /* TBXML.m in Sources */,
+				9530658412D9382300B3B5B4 /* TileOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

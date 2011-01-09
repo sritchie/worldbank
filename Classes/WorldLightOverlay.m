@@ -1,14 +1,14 @@
 //
-//  IUCNTileOverlay.m
+//  WorldLightOverlay.h
 //  WorldBank
 //
 //  Created by Samuel Ritchie on 1/8/11.
 //  Copyright 2011 Threadlock Design. All rights reserved.
 //
 
-#import "IUCNOverlay.h"
+#import "WorldLightOverlay.h"
 
-@implementation IUCNOverlay
+@implementation WorldLightOverlay
 
 @synthesize boundingMapRect; // from <MKOverlay>
 @synthesize coordinate;      // from <MKOverlay>
@@ -23,8 +23,11 @@
 
 - (NSString *)urlForTileWithX:(NSUInteger)x andY:(NSUInteger)y andZoomLevel:(NSUInteger)zoomLevel;
 {
-	NSString *tileServer = @"http://184.73.201.235/blue/";
-	NSString *imagePath = [NSString stringWithFormat:@"%d/%d/%d", zoomLevel, x, y];
+	NSUInteger flippedY = abs(y - (pow(2,zoomLevel) - 1));
+	
+	NSString *tileServer = @"http://b.tile.mapbox.com/1.0.0/world-light/";
+	NSString *imagePath = [NSString stringWithFormat:@"%d/%d/%d.png", zoomLevel, x, flippedY];
 	return [tileServer stringByAppendingString:imagePath];
 }
+
 @end

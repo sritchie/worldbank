@@ -1,5 +1,5 @@
 //
-//  IUCNTileOverlay.h
+//  WorldLightOverlay.h
 //  WorldBank
 //
 //  Created by Samuel Ritchie on 1/8/11.
@@ -8,6 +8,6 @@
 
 #import "TileOverlay.h"
 
-@interface IUCNOverlay : TileOverlay;
+@interface WorldLightOverlay : TileOverlay;
 
 @end

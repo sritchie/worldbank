@@ -7,12 +7,10 @@
 //
 
 #import "WorldBankViewController.h"
-#import "TileOverlay.h"
-#import "TileOverlayView.h"
 
-#import "OSMTileOverlay.h"
+#import "WorldLightOverlay.h"
 #import "IUCNOverlay.h"
-#import "CustomOverlayView.h"
+#import "TileOverlayView.h"
 #import "FormaOverlay.h"
 
 @implementation WorldBankViewController
@@ -23,7 +21,7 @@
 {
     [super viewDidLoad];
 		
-	OSMTileOverlay *overlay = [[OSMTileOverlay alloc] init];
+	WorldLightOverlay *overlay = [[WorldLightOverlay alloc] init];
     [self.map addOverlay:overlay];
 	
 	IUCNOverlay *firstOverlay = [[IUCNOverlay alloc] init];
@@ -46,12 +44,12 @@
 	
 	[self.map setVisibleMapRect:visibleRect];
     
-    [overlay release]; // map is now keeping track of overlay
+    [overlay release];
 }
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay;
 {
-	CustomOverlayView *overlayView = [[[CustomOverlayView alloc] initWithOverlay:overlay] autorelease];
+	TileOverlayView *overlayView = [[[TileOverlayView alloc] initWithOverlay:overlay] autorelease];
     return overlayView;
 }
 
