@@ -578,7 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WorldBank_Prefix.pch;
 				HEADER_SEARCH_PATHS = ./three20/Build/Products/three20;
-				INFOPLIST_FILE = "WorldBank-Info.plist";
+				INFOPLIST_FILE = "Resources/WorldBank-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -599,7 +599,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WorldBank_Prefix.pch;
 				HEADER_SEARCH_PATHS = ./three20/Build/Products/three20;
-				INFOPLIST_FILE = "WorldBank-Info.plist";
+				INFOPLIST_FILE = "Resources/WorldBank-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -638,7 +638,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WorldBank_Prefix.pch;
 				HEADER_SEARCH_PATHS = ./three20/Build/Products/three20;
-				INFOPLIST_FILE = "WorldBank-Info.plist";
+				INFOPLIST_FILE = "Resources/WorldBank-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
