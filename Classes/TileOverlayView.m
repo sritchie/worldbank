@@ -64,15 +64,14 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
 
 - (NSArray *)tileURLsForMapRect:(MKMapRect)rect zoomScale:(MKZoomScale)scale
 {        	
-	NSUInteger zoomLevel = zoomScaleToZoomLevel(scale);
-
     NSInteger minX = floor((MKMapRectGetMinX(rect) * scale) / TILE_SIZE);
     NSInteger maxX = floor((MKMapRectGetMaxX(rect) * scale) / TILE_SIZE);
     NSInteger minY = floor((MKMapRectGetMinY(rect) * scale) / TILE_SIZE);
     NSInteger maxY = floor((MKMapRectGetMaxY(rect) * scale) / TILE_SIZE);
     
-    NSMutableArray *tiles = [NSMutableArray array];
-    
+	NSUInteger zoomLevel = zoomScaleToZoomLevel(scale);
+
+	NSMutableArray *tiles = [NSMutableArray array];
     for (NSInteger x = minX; x <= maxX; x++) {
         for (NSInteger y = minY; y <= maxY; y++) {	
 			NSString *url = [(TileOverlay *)self.overlay urlForTileWithX:x andY:y andZoomLevel:zoomLevel];
@@ -84,10 +83,11 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
 }
 
 - (BOOL)canDrawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale;
-{
-	TTURLCache *cache = [TTURLCache sharedCache];
+{	
+	if (zoomScaleToZoomLevel(zoomScale) > kMaxFormaZoomLevel)
+		return NO;
 
-	
+	TTURLCache *cache = [TTURLCache sharedCache];
 	BOOL canDraw = NO;
 
 	NSArray *tilesInRect = [self tileURLsForMapRect:mapRect zoomScale:zoomScale];
