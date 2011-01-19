@@ -1,32 +1,1753 @@
 <?xml version="1.0"?>
 <datapoints>
-	<author name="J.K. Rowling">
-		<book title="Harry Potter and the Philosopher's Stone" price="119.99">
-			<description>
-				Harry potter thinks he is an ordinary boy - until he is rescued from a beetle-eyed giant of a man, enrolls at Hogwarts School of Witchcraft and Wizardry, learns to play quidditch and does battle in a deadly duel.
-			</description>
-		</book>
-		<book title="Harry Potter and the Chamber of Secrets" price="8.99">
-			<description>
-				When the Chamber of Secrets is opened again at the Hogwarts School for Witchcraft and Wizardry, second-year student Harry Potter finds himself in danger from a dark power that has once more been released on the school.
-			</description>
-		</book>
-		<book title="Harry Potter and the Prisoner of Azkaban" price="12.99">
-			<description>
-				Harry Potter, along with his friends, Ron and Hermione, is about to start his third year at Hogwarts School of Witchcraft and Wizardry. Harry can't wait to get back to school after the summer holidays. (Who wouldn't if they lived with the horrible Dursleys?) But when Harry gets to Hogwarts, the atmosphere is tense. There's an escaped mass murderer on the the loose, and the sinister prison guards of Azkaban have been called in to guard the school.
-			</description>
-		</book>
-	</author>
-	<author name="Douglas Adams">
-		<book title="The Hitchhiker's Guide to the Galaxy" price="15.49">
-			<description>
-				Join Douglas Adams's hapless hero Arthur Dent as he travels the galaxy with his intrepid pal Ford Prefect, getting into horrible messes and generally wreaking hilarious havoc.
-			</description>
-		</book>
-		<book title="The Restaurant at the End of the Universe " price="14.36">
-			<description>
-				Arthur and Ford, having survived the destruction of Earth by surreptitiously hitching a ride on a Vogon constructor ship, have been kicked off that ship by its commander. Now they find themselves aboard a stolen Improbability Drive ship commanded by Beeblebrox, ex-president of the Imperial Galactic Government and full-time thief.
-			</description>
-		</book>
-	</author>
+	<point latitude="4.6125" longitude="97.61196" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.545833" longitude="97.57779" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.529167" longitude="96.12099" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.395833" longitude="95.91966" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.3875" longitude="96.11918" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.320833" longitude="96.10231" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.295833" longitude="96.13258" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.2875" longitude="96.28195" prob=".58">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.270833" longitude="98.16843" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.229167" longitude="96.4167" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.220833" longitude="96.09814" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.220833" longitude="97.93645" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.129167" longitude="97.58247" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.029167" longitude="96.60961" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.9625" longitude="96.61847" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.920833" longitude="96.64703" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.8875" longitude="96.6265" prob=".63">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.8125" longitude="96.61798" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.804167" longitude="98.5797" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.7625" longitude="97.60621" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.7625" longitude="98.39959" prob=".58">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.470833" longitude="98.16756" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.229167" longitude="99.37028" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.9875" longitude="99.40593" prob=".55">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.920833" longitude="99.16633" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.870833" longitude="99.61252" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.8375" longitude="99.60963" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.795833" longitude="97.91238" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.795833" longitude="99.33908" prob=".69">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.795833" longitude="99.53931" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.745833" longitude="99.45168" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.7375" longitude="99.40928" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.645833" longitude="97.97528" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.579167" longitude="97.97008" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.570833" longitude="97.98612" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.570833" longitude="98.0028" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.5625" longitude="97.87704" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.5625" longitude="97.88538" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.554167" longitude="97.98485" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.545833" longitude="97.88411" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.495833" longitude="97.87201" prob=".68">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.4625" longitude="97.85286" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.4125" longitude="100.0262" prob=".69">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.4125" longitude="100.0345" prob=".7">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.395833" longitude="98.07323" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.3875" longitude="100.0243" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.379167" longitude="100.0237" prob=".75">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.329167" longitude="99.84499" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.320833" longitude="99.8444" prob=".66">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.3125" longitude="100.044" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.704167" longitude="99.89001" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.4125" longitude="98.9509" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.404167" longitude="98.86719" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.354167" longitude="99.5153" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.245833" longitude="99.91946" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.145833" longitude="99.12399" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".3125" longitude="99.19731" prob=".6">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".3041667" longitude="99.19723" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1541667" longitude="99.87953" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1208333" longitude="99.86272" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3125" longitude="99.93899" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.904167" longitude="108.1552" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.829167" longitude="108.2709" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.604167" longitude="100.216" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.3875" longitude="100.3162" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.354167" longitude="100.172" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.3375" longitude="100.1625" prob=".55">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.179167" longitude="100.4018" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.954167" longitude="100.6294" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.945833" longitude="101.2042" prob=".63">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.9375" longitude="101.212" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.9125" longitude="100.6436" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.854167" longitude="100.7319" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.845833" longitude="101.165" prob=".55">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.8375" longitude="101.2229" prob=".75">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.829167" longitude="101.2057" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.7875" longitude="100.1362" prob=".55">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.770833" longitude="100.2437" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.7625" longitude="100.2016" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.745833" longitude="100.3507" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.645833" longitude="100.3789" prob=".65">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.620833" longitude="100.3193" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.6125" longitude="100.3106" prob=".74">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.545833" longitude="109.6441" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.5375" longitude="109.5186" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.5375" longitude="109.5519" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.5125" longitude="101.0144" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.4625" longitude="109.8149" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.404167" longitude="109.7371" prob=".72">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.379167" longitude="109.1358" prob=".65">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.345833" longitude="100.6569" prob=".64">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.345833" longitude="100.9237" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.345833" longitude="101.5405" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.329167" longitude="100.8646" prob=".75">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.2125" longitude="100.8434" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.179167" longitude="100.9339" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.170833" longitude="100.8919" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.1625" longitude="100.9083" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.1625" longitude="100.9166" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.1625" longitude="100.9249" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.1625" longitude="101.0083" prob=".59">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.154167" longitude="101.008" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.154167" longitude="101.0163" prob=".72">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.129167" longitude="100.9571" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.120833" longitude="100.9485" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.120833" longitude="101.0568" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.120833" longitude="101.0652" prob=".66">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.1125" longitude="101.6233" prob=".59">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.045833" longitude="101.0043" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.029167" longitude="101.1038" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9958333" longitude="100.9027" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9875" longitude="101.886" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9791667" longitude="101.9191" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9708333" longitude="101.9021" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9458333" longitude="101.8847" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9458333" longitude="101.8931" prob=".6">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9291667" longitude="101.8676" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9291667" longitude="101.9259" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9125" longitude="101.9254" prob=".58">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9125" longitude="101.9338" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".9041667" longitude="101.8835" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".8875" longitude="101.8664" prob=".58">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".8791667" longitude="109.1754" prob=".63">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".8625" longitude="101.5073" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".8625" longitude="109.1749" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".7875" longitude="109.0895" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".7791667" longitude="101.6802" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".7291667" longitude="100.6373" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".7291667" longitude="100.704" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".7208333" longitude="102.0039" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6875" longitude="100.6781" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6875" longitude="108.987" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6875" longitude="109.037" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6875" longitude="109.0453" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6625" longitude="100.6192" prob=".58">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6458333" longitude="102.8774" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".6041667" longitude="100.7181" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".5708333" longitude="100.3925" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".5125" longitude="100.0582" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".4875" longitude="100.2995" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".4625" longitude="102.0742" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".4458333" longitude="101.9823" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".3708333" longitude="109.0648" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".3208333" longitude="102.1724" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".3125" longitude="102.1557" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".2708333" longitude="102.522" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".2541667" longitude="101.7885" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1791667" longitude="109.5464" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1708333" longitude="101.4129" prob=".74">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1708333" longitude="102.2213" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1458333" longitude="101.9128" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1125" longitude="102.7877" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0958333" longitude="102.7876" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0791667" longitude="102.8126" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0708333" longitude="102.7876" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0708333" longitude="102.7959" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0625" longitude="109.2792" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0458333" longitude="101.5875" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0375" longitude="101.1459" prob=".7">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0291667" longitude="109.7792" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".0208333" longitude="101.6375" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.0041667" longitude="109.7958" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.0125" longitude="109.7708" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.0291667" longitude="109.7875" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.0791667" longitude="109.9543" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.1208333" longitude="109.9294" prob=".71">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.1791667" longitude="101.588" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.2041667" longitude="101.6298" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3291667" longitude="102.7392" prob=".6">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3375" longitude="102.7226" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3375" longitude="102.7309" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3375" longitude="102.7476" prob=".6">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3541667" longitude="102.7145" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3625" longitude="102.7146" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3875" longitude="102.6732" prob=".83">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3875" longitude="102.8065" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.3958333" longitude="109.5568" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.4125" longitude="102.7985" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.7375" longitude="102.7543" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.7708333" longitude="102.0801" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8041667" longitude="109.765" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8291667" longitude="110.0074" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8541667" longitude="109.908" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8958333" longitude="101.9416" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.3125" longitude="102.6978" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.3125" longitude="102.7061" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.3625" longitude="102.8916" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.404167" longitude="101.7347" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.445833" longitude="103.0036" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.454167" longitude="103.7209" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.4875" longitude="102.7888" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.495833" longitude="103.2143" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.504167" longitude="103.2147" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.529167" longitude="100.7317" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.854167" longitude="104.1337" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.870833" longitude="104.1514" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.879167" longitude="104.1685" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.920833" longitude="104.1877" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.929167" longitude="104.1465" prob=".58">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.9375" longitude="104.1971" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.954167" longitude="103.9229" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.954167" longitude="104.0313" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.970833" longitude="104.024" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.979167" longitude="103.7827" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.004167" longitude="103.9761" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.020833" longitude="103.2851" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.254167" longitude="101.1574" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.4125" longitude="105.2641" prob=".62">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.4875" longitude="101.2663" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.5125" longitude="101.3766" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.554167" longitude="104.3412" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.570833" longitude="101.181" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.5875" longitude="103.6181" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.620833" longitude="103.7043" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.779167" longitude="103.5176" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.779167" longitude="103.843" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.820833" longitude="104.8979" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.829167" longitude="103.9559" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.845833" longitude="104.775" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.854167" longitude="104.9677" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.945833" longitude="103.8164" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.979167" longitude="104.9293" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.9875" longitude="101.684" prob=".64">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.0625" longitude="104.2364" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.1375" longitude="101.9653" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.145833" longitude="104.52" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.3375" longitude="104.9906" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.345833" longitude="105.0332" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.3625" longitude="105.0433" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.5375" longitude="105.3633" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.545833" longitude="105.3058" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.7125" longitude="103.4295" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.7125" longitude="103.4379" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.8625" longitude="102.963" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-4.170833" longitude="102.7931" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-4.595833" longitude="104.2477" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-4.7375" longitude="105.824" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-7.654167" longitude="109.0172" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.2125" longitude="117.0036" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.120833" longitude="117.0484" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.1125" longitude="117.0305" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.104167" longitude="117.0126" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.104167" longitude="117.046" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.104167" longitude="117.0543" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="4.070833" longitude="117.0411" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.9375" longitude="116.8132" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.9375" longitude="116.8216" prob=".75">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.695833" longitude="117.2397" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.370833" longitude="117.0483" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.329167" longitude="117.2103" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.329167" longitude="117.2604" prob=".74">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.3125" longitude="117.2668" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="3.279167" longitude="117.2294" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.7125" longitude="117.7361" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.354167" longitude="117.0613" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="2.2375" longitude="117.1852" prob=".54">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.979167" longitude="117.2991" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="1.2875" longitude="116.7253" prob=".64">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".5541667" longitude="111.8177" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".1375" longitude="111.4628" prob=".71">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.0625" longitude="110.1459" prob=".63">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8208333" longitude="114.0825" prob=".7">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8208333" longitude="114.0909" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8208333" longitude="114.0992" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.8458333" longitude="114.1166" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.9541667" longitude="110.1361" prob=".6">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.9708333" longitude="110.145" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.9875" longitude="114.2628" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.0125" longitude="110.1964" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.079167" longitude="114.1828" prob=".59">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.0875" longitude="114.1664" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.129167" longitude="110.4756" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.1875" longitude="114.137" prob=".59">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.354167" longitude="110.1433" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.3875" longitude="110.6449" prob=".68">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.3875" longitude="113.4624" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.5625" longitude="114.5134" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.6125" longitude="110.4312" prob=".65">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.6625" longitude="113.6353" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.670833" longitude="119.455" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.695833" longitude="113.6539" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.7125" longitude="115.8392" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.745833" longitude="110.2887" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.7875" longitude="110.2411" prob=".61">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.795833" longitude="110.2083" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.8125" longitude="110.226" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.8125" longitude="110.2343" prob=".57">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.820833" longitude="113.7032" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.8375" longitude="113.3541" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.8375" longitude="115.9721" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.920833" longitude="114.9187" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.929167" longitude="114.0772" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.945833" longitude="113.6197" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.979167" longitude="113.4552" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.9875" longitude="113.3307" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.9875" longitude="114.2062" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-1.9875" longitude="115.0234" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.0625" longitude="114.47" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.070833" longitude="119.4238" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.120833" longitude="113.9989" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.1375" longitude="113.9835" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.1625" longitude="119.4976" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.179167" longitude="112.8441" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.195833" longitude="110.577" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.204167" longitude="114.3638" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.220833" longitude="113.6062" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.220833" longitude="114.6153" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.245833" longitude="114.342" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.245833" longitude="119.4292" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.254167" longitude="112.8165" prob=".64">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.2625" longitude="113.8346" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.2625" longitude="116.0029" prob=".67">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.320833" longitude="110.5115" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.320833" longitude="112.9301" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.345833" longitude="110.2049" prob=".72">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.454167" longitude="115.2849" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.5625" longitude="115.211" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.6125" longitude="112.2375" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.695833" longitude="118.8607" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.7625" longitude="114.4872" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.9125" longitude="114.6272" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.920833" longitude="113.3848" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.995833" longitude="113.9098" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.0125" longitude="114.8629" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.020833" longitude="114.8638" prob=".6">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.054167" longitude="113.8242" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.470833" longitude="115.9669" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.479167" longitude="115.6256" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.570833" longitude="115.5869" prob=".51">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.670833" longitude="115.3993" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.704167" longitude="119.7293" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.804167" longitude="119.7346" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.904167" longitude="116.2239" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-7.979167" longitude="113.5619" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".5625" longitude="127.9103" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude=".5375" longitude="121.4262" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.6041667" longitude="123.2277" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.6125" longitude="123.0779" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-.6208333" longitude="123.2281" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.079167" longitude="121.0005" prob=".56">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.329167" longitude="121.3044" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.3375" longitude="121.2968" prob=".63">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.579167" longitude="128.4297" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.604167" longitude="128.4248" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-3.9625" longitude="121.5197" prob=".53">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-4.495833" longitude="136.9171" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-6.6125" longitude="139.3814" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-7.8375" longitude="131.2384" prob=".5">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-7.8625" longitude="131.28" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
+	<point latitude="-2.704167" longitude="140.7776" prob=".52">
+		<description>
+			This is a data point for FORMA.
+		</description>
+	</point>
 </datapoints>
