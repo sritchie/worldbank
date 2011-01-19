@@ -10,6 +10,8 @@
 #import "WorldBankViewController.h"
 #import "Three20Network/Three20Network.h"
 
+#import "PointParser.h"
+
 #import "CommonMacros.h"
 
 @implementation WorldBankAppDelegate
@@ -25,6 +27,9 @@
     [window makeKeyAndVisible];
 	
 	[self prepareTileCache];
+	
+	//just here to kick things off, and make the parsing work. KLUDGE
+	PointParser *parser = [[PointParser alloc] init];
 
     return YES;
 }
