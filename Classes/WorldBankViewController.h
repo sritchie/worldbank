@@ -9,11 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
+#define FORMA_XML_FILENAME @"formapoints.xml"
+
+@class PointParser;
+
 @interface WorldBankViewController : UIViewController <MKMapViewDelegate> {
     IBOutlet MKMapView *map;
+	PointParser *pointParser;
 }
 
 @property (nonatomic, retain) MKMapView *map;
+@property (nonatomic, retain) PointParser *pointParser;
+
+-(void) loadAnnotationsForMapRegion:(MKCoordinateRegion)region;
 
 @end
 

@@ -31,8 +31,8 @@
 		9530658412D9382300B3B5B4 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530658312D9382300B3B5B4 /* TileOverlay.m */; };
 		95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */; };
 		95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE412E7A68C00E6E1C2 /* PointParser.m */; };
-		95BB5DEA12E7A7D600E6E1C2 /* FormaPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE912E7A7D600E6E1C2 /* FormaPoint.m */; };
-		95BB5E1612E7A9DF00E6E1C2 /* FormaPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5E1512E7A9DF00E6E1C2 /* FormaPointView.m */; };
+		95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */; };
+		95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 95BB602612E8C00500E6E1C2 /* bullseye.png */; };
 		95F7491012D7AE58005042E9 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F7489112D7AE0B005042E9 /* libThree20Core.a */; };
 		95F7491112D7AE5A005042E9 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F748A512D7AE0B005042E9 /* libThree20Network.a */; };
 		95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F74A7412D7AF10005042E9 /* Three20.bundle */; };
@@ -179,10 +179,9 @@
 		95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		95BB5DE312E7A68C00E6E1C2 /* PointParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointParser.h; sourceTree = "<group>"; };
 		95BB5DE412E7A68C00E6E1C2 /* PointParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointParser.m; sourceTree = "<group>"; };
-		95BB5DE812E7A7D600E6E1C2 /* FormaPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaPoint.h; sourceTree = "<group>"; };
-		95BB5DE912E7A7D600E6E1C2 /* FormaPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaPoint.m; sourceTree = "<group>"; };
-		95BB5E1412E7A9DF00E6E1C2 /* FormaPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaPointView.h; sourceTree = "<group>"; };
-		95BB5E1512E7A9DF00E6E1C2 /* FormaPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaPointView.m; sourceTree = "<group>"; };
+		95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaAnnotation.h; sourceTree = "<group>"; };
+		95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaAnnotation.m; sourceTree = "<group>"; };
+		95BB602612E8C00500E6E1C2 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
 		95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F74A7412D7AF10005042E9 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
@@ -233,8 +232,6 @@
 				9530658512D9382C00B3B5B4 /* TileOverlays */,
 				95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */,
 				95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */,
-				95BB5DE312E7A68C00E6E1C2 /* PointParser.h */,
-				95BB5DE412E7A68C00E6E1C2 /* PointParser.m */,
 				95BB5E1812E7A9E400E6E1C2 /* Annotations */,
 			);
 			path = Classes;
@@ -279,6 +276,7 @@
 			children = (
 				95F74A7412D7AF10005042E9 /* Three20.bundle */,
 				9530656B12D9365900B3B5B4 /* formapoints.xml */,
+				95BB602612E8C00500E6E1C2 /* bullseye.png */,
 				9507F967127D3D1A0033D35C /* Icon Images */,
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -352,10 +350,10 @@
 		95BB5E1812E7A9E400E6E1C2 /* Annotations */ = {
 			isa = PBXGroup;
 			children = (
-				95BB5DE812E7A7D600E6E1C2 /* FormaPoint.h */,
-				95BB5DE912E7A7D600E6E1C2 /* FormaPoint.m */,
-				95BB5E1412E7A9DF00E6E1C2 /* FormaPointView.h */,
-				95BB5E1512E7A9DF00E6E1C2 /* FormaPointView.m */,
+				95BB5DE312E7A68C00E6E1C2 /* PointParser.h */,
+				95BB5DE412E7A68C00E6E1C2 /* PointParser.m */,
+				95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */,
+				95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */,
 			);
 			name = Annotations;
 			sourceTree = "<group>";
@@ -550,6 +548,7 @@
 				95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */,
 				95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */,
 				9530656C12D9365900B3B5B4 /* formapoints.xml in Resources */,
+				95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,8 +571,7 @@
 				9530656312D9361D00B3B5B4 /* TBXML.m in Sources */,
 				9530658412D9382300B3B5B4 /* TileOverlay.m in Sources */,
 				95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */,
-				95BB5DEA12E7A7D600E6E1C2 /* FormaPoint.m in Sources */,
-				95BB5E1612E7A9DF00E6E1C2 /* FormaPointView.m in Sources */,
+				95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

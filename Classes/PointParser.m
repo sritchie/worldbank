@@ -6,93 +6,102 @@
 //  Copyright 2011 Threadlock Design. All rights reserved.
 //
 
+#define MIN_ZOOM_LEVEL 4
+
 #import "PointParser.h"
 #import "CommonMacros.h"
 #import "TBXML.h"
 
-#import "FormaPoint.h"
+#import "FormaAnnotation.h"
 
 @implementation PointParser
 
--(id) init;
-{
-	if ((self = [super init])) {
-		[self loadPoints];
-	}
-    return self;
+@synthesize formaPoints;
+
+static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
+    double numTilesAt1_0 = MKMapSizeWorld.width / TILE_SIZE;
+    NSInteger zoomLevelAt1_0 = log2(numTilesAt1_0);  // add 1 because the convention skips a virtual level with 1 tile.
+    NSInteger zoomLevel = MAX(0, zoomLevelAt1_0 + floor(log2f(scale) + 0.5));
+    return zoomLevel;
 }
 
-- (void)loadPoints;
+-(id) initWithFormaPointXMLURL:(NSURL *)formaURL;
 {
-	NSMutableArray *formaPoints = [[NSMutableArray alloc] initWithCapacity:200];
+	if ((self = [super init])) {
+		TBXML *tbxml = [[TBXML alloc] initWithURL:formaURL];
+		self.formaPoints = [self loadFormaPointsFromTBXML:tbxml];
+		[tbxml release];
+	}
+
+	return self;
+}
+
+-(id) initWithFormaPointXMLFileNamed:(NSString *)fileName;
+{
+	if ((self = [super init])) {
+		TBXML *tbxml = [[TBXML alloc] initWithXMLFile:fileName];
+		self.formaPoints = [self loadFormaPointsFromTBXML:tbxml];
+		[tbxml release];
+	}
 	
-	// Load and parse the books.xml file
-	TBXML *tbxml = [[TBXML alloc] initWithXMLFile:@"formapoints.xml"];
-	
+	return self;
+}
+
+-(NSMutableSet *) formaPointsForMapRegion:(MKCoordinateRegion)region zoomScale:(MKZoomScale)zoomScale;
+{
+	NSMutableSet *selectedPoints = [NSMutableSet setWithCapacity:50];
+
+	if (zoomScaleToZoomLevel(zoomScale) > MIN_ZOOM_LEVEL) {
+		CLLocationDegrees latStart = region.center.latitude - region.span.latitudeDelta/2.0;
+		CLLocationDegrees latStop = region.center.latitude + region.span.latitudeDelta/2.0;
+		CLLocationDegrees lonStart = region.center.longitude - region.span.longitudeDelta/2.0;
+		CLLocationDegrees lonStop = region.center.longitude + region.span.longitudeDelta/2.0;
+		
+		
+		for (FormaAnnotation *annotation in formaPoints) {
+			CLLocationDegrees lat = annotation.coordinate.latitude;
+			CLLocationDegrees lon = annotation.coordinate.longitude;
+			
+			if ((lat > latStart && lat < latStop) && (lon > lonStart && lon < lonStop)) {
+				[selectedPoints addObject:annotation];			
+			}
+		}
+	}
+
+	return selectedPoints;
+}
+
+-(NSSet *) loadFormaPointsFromTBXML:(TBXML *)tbxml;
+{	
+	NSMutableSet *points = [[NSMutableArray alloc] initWithCapacity:200];
+
 	TBXMLElement *root = tbxml.rootXMLElement;
 	
 	if (root) {
 		TBXMLElement *point = [TBXML childElementNamed:@"point" parentElement:root];
 		
-		// if an author element was found
-		while (!IsEmpty(point)) {
-			
-			// instantiate an author object
-			FormaPoint *formaPoint = [[FormaPoint alloc] init];
-			
-			// get the name attribute from the author element
-			formaPoint.name = [TBXML valueOfAttributeNamed:@"name" forElement:author];
-			
-			// search the author's child elements for a book element
-			TBXMLElement * book = [TBXML childElementNamed:@"description" parentElement:author];
-			
-			// if a book element was found
-			while (book != nil) {
-				
-				// instantiate a book object
-				Book * aBook = [[Book alloc] init];
-				
-				// extract the title attribute from the book element
-				aBook.title = [TBXML valueOfAttributeNamed:@"title" forElement:book];
-				
-				// extract the title attribute from the book element
-				NSString * price = [TBXML valueOfAttributeNamed:@"price" forElement:book];
-				
-				// if we found a price
-				if (price != nil) {
-					// obtain the price from the book element
-					aBook.price = [NSNumber numberWithFloat:[price floatValue]];
-				}
-				
-				// find the description child element of the book element
-				TBXMLElement * desc = [TBXML childElementNamed:@"description" parentElement:book];
-				
-				// if we found a description
-				if (desc != nil) {
-					// obtain the text from the description element
-					aBook.description = [TBXML textForElement:desc];
-				}
-				
-				// add the book object to the author's books array and release the resource
-				[anAuthor.books addObject:aBook];
-				[aBook release];
-				
-				// find the next sibling element named "book"
-				book = [TBXML nextSiblingNamed:@"book" searchFromElement:book];
-			}
-			
-			// add our author object to the authors array and release the resource
-			[authors addObject:anAuthor];
-			[anAuthor release];
-			
-			// find the next sibling element named "author"
-			author = [TBXML nextSiblingNamed:@"author" searchFromElement:author];
-		}			
-	}
-	
-	// release resources
-	[tbxml release];
-}
+		while (point != nil) {
+			double lat = [[TBXML valueOfAttributeNamed:@"latitude" forElement:point] doubleValue];
+			double lon = [[TBXML valueOfAttributeNamed:@"longitude" forElement:point] doubleValue];
+			CGFloat prob = [[TBXML valueOfAttributeNamed:@"prob" forElement:point] floatValue];
 
+			CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(lat, lon);
+			
+			FormaAnnotation *formaPoint = [[FormaAnnotation alloc] initWithCoordinate:coord];
+			[formaPoint setProbability:prob];
+			
+			TBXMLElement * desc = [TBXML childElementNamed:@"description" parentElement:point];
+			[formaPoint setDescription:[TBXML textForElement:desc]];
+
+			[points addObject:formaPoint];
+			[formaPoint release];
+			
+			point = [TBXML nextSiblingNamed:@"point" searchFromElement:point];
+		}
+	}
+		
+	NSAssert(!IsEmpty(points), @"The FORMA points array was empty!");
+	return points;	
+}
 
 @end
