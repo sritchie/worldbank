@@ -11,15 +11,22 @@
 @class TBXML;
 
 @interface PointParser : NSObject {
+	NSInteger zoomLevel;
 	NSSet *formaPoints;
+	NSMutableSet *clusters;
 }
 
+@property NSInteger zoomLevel;
 @property (nonatomic, retain) NSSet *formaPoints;
+@property (nonatomic, retain) NSMutableSet *clusters;
 
 -(id) initWithFormaPointXMLURL:(NSURL *)formaURL;
 -(id) initWithFormaPointXMLFileNamed:(NSString *)fileName;
 
 -(NSSet *) loadFormaPointsFromTBXML:(TBXML *)tbxml;
+
+-(NSMutableSet *) clustersForMapRegion:(MKCoordinateRegion)region zoomScale:(MKZoomScale)zoomScale;
+-(NSMutableSet *) clustersShowingInRegion:(MKCoordinateRegion)region;
 
 -(NSMutableSet *) formaPointsForMapRegion:(MKCoordinateRegion)region zoomScale:(MKZoomScale)zoomScale;
 

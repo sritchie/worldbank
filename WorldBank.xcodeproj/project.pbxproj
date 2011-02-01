@@ -33,6 +33,8 @@
 		95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE412E7A68C00E6E1C2 /* PointParser.m */; };
 		95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */; };
 		95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 95BB602612E8C00500E6E1C2 /* bullseye.png */; };
+		95F40D9212F78DF2003BD0C6 /* AnnotationClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */; };
+		95F40DA412F78F10003BD0C6 /* AnnotationCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F40DA312F78F10003BD0C6 /* AnnotationCluster.m */; };
 		95F7491012D7AE58005042E9 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F7489112D7AE0B005042E9 /* libThree20Core.a */; };
 		95F7491112D7AE5A005042E9 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F748A512D7AE0B005042E9 /* libThree20Network.a */; };
 		95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95F74A7412D7AF10005042E9 /* Three20.bundle */; };
@@ -182,6 +184,10 @@
 		95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaAnnotation.h; sourceTree = "<group>"; };
 		95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaAnnotation.m; sourceTree = "<group>"; };
 		95BB602612E8C00500E6E1C2 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
+		95F40D9012F78DF2003BD0C6 /* AnnotationClusterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterView.h; sourceTree = "<group>"; };
+		95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterView.m; sourceTree = "<group>"; };
+		95F40DA212F78F10003BD0C6 /* AnnotationCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationCluster.h; sourceTree = "<group>"; };
+		95F40DA312F78F10003BD0C6 /* AnnotationCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationCluster.m; sourceTree = "<group>"; };
 		95F7487612D7AE0B005042E9 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F7487912D7AE0B005042E9 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
 		95F74A7412D7AF10005042E9 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
@@ -354,6 +360,10 @@
 				95BB5DE412E7A68C00E6E1C2 /* PointParser.m */,
 				95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */,
 				95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */,
+				95F40D9012F78DF2003BD0C6 /* AnnotationClusterView.h */,
+				95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */,
+				95F40DA212F78F10003BD0C6 /* AnnotationCluster.h */,
+				95F40DA312F78F10003BD0C6 /* AnnotationCluster.m */,
 			);
 			name = Annotations;
 			sourceTree = "<group>";
@@ -572,6 +582,8 @@
 				9530658412D9382300B3B5B4 /* TileOverlay.m in Sources */,
 				95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */,
 				95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */,
+				95F40D9212F78DF2003BD0C6 /* AnnotationClusterView.m in Sources */,
+				95F40DA412F78F10003BD0C6 /* AnnotationCluster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

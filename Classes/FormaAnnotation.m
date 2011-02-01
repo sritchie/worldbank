@@ -16,16 +16,15 @@
 
 -(id) initWithCoordinate:(CLLocationCoordinate2D)coord;
 {
-	coordinate = coord;
-	NSLog(@"%f,%f", coord.latitude, coord.longitude);
+	if ((self = [super init])) {
+		coordinate = coord;
+	}
 	return self;
 }
 
 - (NSString *)subtitle;
 {
 	return [NSString stringWithFormat:@"Chance: %0.1f%%", (100 * self.probability)];
-	
-	return @"Sub Title";
 }
 
 - (NSString *)title;
