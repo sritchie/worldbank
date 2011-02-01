@@ -21,6 +21,7 @@
 @property (nonatomic, retain) MKMapView *map;
 @property (nonatomic, retain) PointParser *pointParser;
 
+-(void) loadPointParser;
 -(void) loadAnnotationsForMapRegion:(MKCoordinateRegion)region;
 
 @end

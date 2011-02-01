@@ -25,9 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	PointParser *parser = [[PointParser alloc] initWithFormaPointXMLFileNamed:FORMA_XML_FILENAME];
-	self.pointParser = parser;
-	[parser release];
+	
+	[self loadPointParser];
 		
 	WorldLightOverlay *overlay = [[WorldLightOverlay alloc] init];
     [self.map addOverlay:overlay];
@@ -54,6 +53,15 @@
 	[self loadAnnotationsForMapRegion:self.map.region];
 
     [overlay release];
+}
+
+-(void) loadPointParser;
+{
+	NSURL *pointsXML = [NSURL URLWithString:@"http://d2eyuetuyqg5j4.cloudfront.net/xml/formapoints.xml"];
+
+	PointParser *parser = [[PointParser alloc] initWithFormaPointXMLURL:pointsXML];
+	self.pointParser = parser;
+	[parser release];
 }
 
 -(void) loadAnnotationsForMapRegion:(MKCoordinateRegion)region;
