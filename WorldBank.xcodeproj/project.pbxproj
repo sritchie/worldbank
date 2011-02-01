@@ -30,6 +30,11 @@
 		9530656C12D9365900B3B5B4 /* formapoints.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9530656B12D9365900B3B5B4 /* formapoints.xml */; };
 		9530658412D9382300B3B5B4 /* TileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530658312D9382300B3B5B4 /* TileOverlay.m */; };
 		95577D8E1281BF14001EB084 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */; };
+		9598D1C112F7ADAF00EDC657 /* m1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9598D1BC12F7ADAF00EDC657 /* m1.png */; };
+		9598D1C212F7ADAF00EDC657 /* m2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9598D1BD12F7ADAF00EDC657 /* m2.png */; };
+		9598D1C312F7ADAF00EDC657 /* m3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9598D1BE12F7ADAF00EDC657 /* m3.png */; };
+		9598D1C412F7ADAF00EDC657 /* m4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9598D1BF12F7ADAF00EDC657 /* m4.png */; };
+		9598D1C512F7ADAF00EDC657 /* m5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9598D1C012F7ADAF00EDC657 /* m5.png */; };
 		95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE412E7A68C00E6E1C2 /* PointParser.m */; };
 		95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */; };
 		95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 95BB602612E8C00500E6E1C2 /* bullseye.png */; };
@@ -179,6 +184,11 @@
 		9530658212D9382300B3B5B4 /* TileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlay.h; sourceTree = "<group>"; };
 		9530658312D9382300B3B5B4 /* TileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileOverlay.m; sourceTree = "<group>"; };
 		95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		9598D1BC12F7ADAF00EDC657 /* m1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m1.png; sourceTree = "<group>"; };
+		9598D1BD12F7ADAF00EDC657 /* m2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m2.png; sourceTree = "<group>"; };
+		9598D1BE12F7ADAF00EDC657 /* m3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m3.png; sourceTree = "<group>"; };
+		9598D1BF12F7ADAF00EDC657 /* m4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m4.png; sourceTree = "<group>"; };
+		9598D1C012F7ADAF00EDC657 /* m5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m5.png; sourceTree = "<group>"; };
 		95BB5DE312E7A68C00E6E1C2 /* PointParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointParser.h; sourceTree = "<group>"; };
 		95BB5DE412E7A68C00E6E1C2 /* PointParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointParser.m; sourceTree = "<group>"; };
 		95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaAnnotation.h; sourceTree = "<group>"; };
@@ -280,6 +290,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9598D1B812F7AD9B00EDC657 /* Cluster Images */,
 				95F74A7412D7AF10005042E9 /* Three20.bundle */,
 				9530656B12D9365900B3B5B4 /* formapoints.xml */,
 				95BB602612E8C00500E6E1C2 /* bullseye.png */,
@@ -351,6 +362,18 @@
 				95577D8D1281BF14001EB084 /* MainWindow-iPad.xib */,
 			);
 			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		9598D1B812F7AD9B00EDC657 /* Cluster Images */ = {
+			isa = PBXGroup;
+			children = (
+				9598D1BC12F7ADAF00EDC657 /* m1.png */,
+				9598D1BD12F7ADAF00EDC657 /* m2.png */,
+				9598D1BE12F7ADAF00EDC657 /* m3.png */,
+				9598D1BF12F7ADAF00EDC657 /* m4.png */,
+				9598D1C012F7ADAF00EDC657 /* m5.png */,
+			);
+			name = "Cluster Images";
 			sourceTree = "<group>";
 		};
 		95BB5E1812E7A9E400E6E1C2 /* Annotations */ = {
@@ -559,6 +582,11 @@
 				95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */,
 				9530656C12D9365900B3B5B4 /* formapoints.xml in Resources */,
 				95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */,
+				9598D1C112F7ADAF00EDC657 /* m1.png in Resources */,
+				9598D1C212F7ADAF00EDC657 /* m2.png in Resources */,
+				9598D1C312F7ADAF00EDC657 /* m3.png in Resources */,
+				9598D1C412F7ADAF00EDC657 /* m4.png in Resources */,
+				9598D1C512F7ADAF00EDC657 /* m5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
