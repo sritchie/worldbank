@@ -38,6 +38,7 @@
 		95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE412E7A68C00E6E1C2 /* PointParser.m */; };
 		95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */; };
 		95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 95BB602612E8C00500E6E1C2 /* bullseye.png */; };
+		95DDE65212FF718A000E09CA /* smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DDE65112FF718A000E09CA /* smiley.png */; };
 		95F40D9212F78DF2003BD0C6 /* AnnotationClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */; };
 		95F40DA412F78F10003BD0C6 /* AnnotationCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F40DA312F78F10003BD0C6 /* AnnotationCluster.m */; };
 		95F7491012D7AE58005042E9 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F7489112D7AE0B005042E9 /* libThree20Core.a */; };
@@ -46,7 +47,6 @@
 		95F74B3C12D7BDF0005042E9 /* WorldLightOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B3B12D7BDF0005042E9 /* WorldLightOverlay.m */; };
 		95F74B4712D7BE8A005042E9 /* TileOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B4612D7BE8A005042E9 /* TileOverlayView.m */; };
 		95F74B7412D7C037005042E9 /* IUCNOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B7312D7C037005042E9 /* IUCNOverlay.m */; };
-		95F74B9F12D7D4C0005042E9 /* CustomUISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */; };
 		95F74BBF12D80ADD005042E9 /* FormaOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F74BBE12D80ADD005042E9 /* FormaOverlay.m */; };
 		95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95F74C7812D80FFE005042E9 /* Entitlements.plist */; };
 /* End PBXBuildFile section */
@@ -194,6 +194,7 @@
 		95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaAnnotation.h; sourceTree = "<group>"; };
 		95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaAnnotation.m; sourceTree = "<group>"; };
 		95BB602612E8C00500E6E1C2 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
+		95DDE65112FF718A000E09CA /* smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smiley.png; sourceTree = "<group>"; };
 		95F40D9012F78DF2003BD0C6 /* AnnotationClusterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterView.h; sourceTree = "<group>"; };
 		95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterView.m; sourceTree = "<group>"; };
 		95F40DA212F78F10003BD0C6 /* AnnotationCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationCluster.h; sourceTree = "<group>"; };
@@ -209,8 +210,6 @@
 		95F74B5012D7BEAE005042E9 /* TileOverlayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileOverlayProtocol.h; sourceTree = "<group>"; };
 		95F74B7212D7C037005042E9 /* IUCNOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUCNOverlay.h; sourceTree = "<group>"; };
 		95F74B7312D7C037005042E9 /* IUCNOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUCNOverlay.m; sourceTree = "<group>"; };
-		95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUISlider.h; sourceTree = "<group>"; };
-		95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUISlider.m; sourceTree = "<group>"; };
 		95F74BBD12D80ADD005042E9 /* FormaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaOverlay.h; sourceTree = "<group>"; };
 		95F74BBE12D80ADD005042E9 /* FormaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaOverlay.m; sourceTree = "<group>"; };
 		95F74C7812D80FFE005042E9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = SOURCE_ROOT; };
@@ -246,8 +245,6 @@
 				95F74B4512D7BE8A005042E9 /* TileOverlayView.h */,
 				95F74B4612D7BE8A005042E9 /* TileOverlayView.m */,
 				9530658512D9382C00B3B5B4 /* TileOverlays */,
-				95F74B9D12D7D4C0005042E9 /* CustomUISlider.h */,
-				95F74B9E12D7D4C0005042E9 /* CustomUISlider.m */,
 				95BB5E1812E7A9E400E6E1C2 /* Annotations */,
 			);
 			path = Classes;
@@ -293,6 +290,7 @@
 				9598D1B812F7AD9B00EDC657 /* Cluster Images */,
 				95F74A7412D7AF10005042E9 /* Three20.bundle */,
 				9530656B12D9365900B3B5B4 /* formapoints.xml */,
+				95DDE65112FF718A000E09CA /* smiley.png */,
 				95BB602612E8C00500E6E1C2 /* bullseye.png */,
 				9507F967127D3D1A0033D35C /* Icon Images */,
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
@@ -587,6 +585,7 @@
 				9598D1C312F7ADAF00EDC657 /* m3.png in Resources */,
 				9598D1C412F7ADAF00EDC657 /* m4.png in Resources */,
 				9598D1C512F7ADAF00EDC657 /* m5.png in Resources */,
+				95DDE65212FF718A000E09CA /* smiley.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +602,6 @@
 				95F74B3C12D7BDF0005042E9 /* WorldLightOverlay.m in Sources */,
 				95F74B4712D7BE8A005042E9 /* TileOverlayView.m in Sources */,
 				95F74B7412D7C037005042E9 /* IUCNOverlay.m in Sources */,
-				95F74B9F12D7D4C0005042E9 /* CustomUISlider.m in Sources */,
 				95F74BBF12D80ADD005042E9 /* FormaOverlay.m in Sources */,
 				9530656212D9361D00B3B5B4 /* NSDataAdditions.m in Sources */,
 				9530656312D9361D00B3B5B4 /* TBXML.m in Sources */,

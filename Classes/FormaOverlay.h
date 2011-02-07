@@ -8,6 +8,12 @@
 
 #import "TileOverlay.h"
 
-@interface FormaOverlay : TileOverlay;
+@interface FormaOverlay : TileOverlay {
+	NSString *tileDir;
+}
+
+@property (nonatomic, retain) NSString *tileDir;
+
+-(id) initWithTileDir:(NSString *)dir;
 
 @end

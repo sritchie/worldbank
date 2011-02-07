@@ -103,7 +103,6 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
 	return canDraw;
 }
 
-
 -(void) performTileRequestWithURLString:(NSString *)urlString mapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale {
 	// Perform a background HTTP request for this map tile.
 	// (The delegate's didFinishLoad method will call setNeedsDisplayInMapRect,
