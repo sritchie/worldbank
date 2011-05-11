@@ -84,7 +84,7 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale) {
 
 - (BOOL)canDrawMapRect:(MKMapRect)mapRect zoomScale:(MKZoomScale)zoomScale;
 {	
-	if (zoomScaleToZoomLevel(zoomScale) > kMaxFormaZoomLevel)
+	if ((zoomScaleToZoomLevel(zoomScale) > kMaxFormaZoomLevel) || IsEmpty(self.superview)) 
 		return NO;
 
 	TTURLCache *cache = [TTURLCache sharedCache];

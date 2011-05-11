@@ -37,7 +37,6 @@
 		9598D1C512F7ADAF00EDC657 /* m5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9598D1C012F7ADAF00EDC657 /* m5.png */; };
 		95BB5DE512E7A68C00E6E1C2 /* PointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE412E7A68C00E6E1C2 /* PointParser.m */; };
 		95BB5DEA12E7A7D600E6E1C2 /* FormaAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */; };
-		95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = 95BB602612E8C00500E6E1C2 /* bullseye.png */; };
 		95DDE65212FF718A000E09CA /* smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DDE65112FF718A000E09CA /* smiley.png */; };
 		95F40D9212F78DF2003BD0C6 /* AnnotationClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */; };
 		95F40DA412F78F10003BD0C6 /* AnnotationCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F40DA312F78F10003BD0C6 /* AnnotationCluster.m */; };
@@ -193,7 +192,6 @@
 		95BB5DE412E7A68C00E6E1C2 /* PointParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointParser.m; sourceTree = "<group>"; };
 		95BB5DE812E7A7D600E6E1C2 /* FormaAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormaAnnotation.h; sourceTree = "<group>"; };
 		95BB5DE912E7A7D600E6E1C2 /* FormaAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormaAnnotation.m; sourceTree = "<group>"; };
-		95BB602612E8C00500E6E1C2 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
 		95DDE65112FF718A000E09CA /* smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smiley.png; sourceTree = "<group>"; };
 		95F40D9012F78DF2003BD0C6 /* AnnotationClusterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterView.h; sourceTree = "<group>"; };
 		95F40D9112F78DF2003BD0C6 /* AnnotationClusterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterView.m; sourceTree = "<group>"; };
@@ -291,7 +289,6 @@
 				95F74A7412D7AF10005042E9 /* Three20.bundle */,
 				9530656B12D9365900B3B5B4 /* formapoints.xml */,
 				95DDE65112FF718A000E09CA /* smiley.png */,
-				95BB602612E8C00500E6E1C2 /* bullseye.png */,
 				9507F967127D3D1A0033D35C /* Icon Images */,
 				2899E5210DE3E06400AC0155 /* WorldBankViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -579,7 +576,6 @@
 				95F74A7512D7AF10005042E9 /* Three20.bundle in Resources */,
 				95F74C7912D80FFE005042E9 /* Entitlements.plist in Resources */,
 				9530656C12D9365900B3B5B4 /* formapoints.xml in Resources */,
-				95BB602712E8C00500E6E1C2 /* bullseye.png in Resources */,
 				9598D1C112F7ADAF00EDC657 /* m1.png in Resources */,
 				9598D1C212F7ADAF00EDC657 /* m2.png in Resources */,
 				9598D1C312F7ADAF00EDC657 /* m3.png in Resources */,
@@ -634,6 +630,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sam Ritchie (3N6A386SRX)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -647,6 +644,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = WorldBank;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE2C1D26-55C4-4A97-8EB6-AB69D0E2C562";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -707,7 +705,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = WorldBank;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D67D3E0E-E126-4941-BC0D-5BA41201DDBC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF91435A-6ACC-47FA-BAF9-6FA45C68EBA4";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

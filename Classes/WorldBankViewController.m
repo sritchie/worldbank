@@ -16,6 +16,7 @@
 
 #import "PointParser.h"
 #import "AnnotationCluster.h"
+#import "AnnotationClusterView.h"
 
 @implementation WorldBankViewController
 
@@ -26,6 +27,16 @@
 @synthesize currentLayer;
 @synthesize hoverImage;
 
+-(void) switchToFormaLayer:(NSInteger)index;
+{
+	FormaOverlay *current = [self.formaLayers objectAtIndex:self.currentLayer];
+	FormaOverlay *next = [self.formaLayers objectAtIndex:index];
+	[self.map removeOverlay:current];
+	[self.map addOverlay:next];
+	NSLog(@"Switched!");
+	self.currentLayer = index;
+}
+
 -(IBAction) toggleLayers:(id)sender;
 {	
 	NSInteger nextLayer = self.currentLayer + 1;
@@ -33,21 +44,21 @@
 	if (nextLayer == [self.formaLayers count]) {
 		nextLayer = 0;
 	}
-	
-	[self.map removeOverlay:[self.formaLayers objectAtIndex:self.currentLayer]];
-	[self.map addOverlay:[self.formaLayers objectAtIndex:nextLayer]];
-	
-	self.currentLayer = nextLayer;
+	[self switchToFormaLayer:nextLayer];
 }
 
 -(IBAction) startedSliding:(id)sender;
 {
-	[self fadeIn:self.hoverImage withDuration:FADE_DURATION];
+	
+	//	[self fadeIn:self.hoverImage withDuration:FADE_DURATION];
 }
 
 -(IBAction) finishedSliding:(id)sender;
 {
-	[self fadeOut:self.hoverImage withDuration:FADE_DURATION];
+	NSInteger index = (NSInteger)ceil(58.0 * self.slider.value);
+	[self switchToFormaLayer:index];
+	NSLog(@"%f, %i", self.slider.value, index);
+//	[self fadeOut:self.hoverImage withDuration:FADE_DURATION];
 }
 
 -(void)fadeOut:(UIView*)viewToDissolve withDuration:(NSTimeInterval)duration;
@@ -97,7 +108,7 @@
 	CGFloat y = bounds.size.height - self.slider.center.y - 70.0;
 	self.hoverImage.center = CGPointMake(x, y);
 	self.hoverImage.alpha = 0;
-	[self.view addSubview:self.hoverImage];
+//	[self.view addSubview:self.hoverImage];
 }
 
 -(void) viewDidLoad;
@@ -106,14 +117,28 @@
 	
 	[self loadPointParser];
 	
-	WorldLightOverlay *overlay = [[WorldLightOverlay alloc] init];
-    [self.map addOverlay:overlay];
+//	WorldLightOverlay *overlay = [[WorldLightOverlay alloc] init];
+//    [self.map addOverlay:overlay];
 	
 	IUCNOverlay *firstOverlay = [[IUCNOverlay alloc] init];
     [self.map addOverlay:firstOverlay];
     [firstOverlay release];
 	
-	NSArray *extensions = [[NSArray alloc] initWithObjects:@"tiles/map130", @"june", nil];
+	NSMutableArray *builder = [[NSMutableArray alloc] initWithCapacity:100];
+	
+	for (int i = 71; i < 100; i++) {
+		NSString *path = [NSString stringWithFormat:@"tiles/nurseispygypsiesrun0%i/nurseispygypsiesrun0%i", i, i];
+		[builder addObject:path];
+	}
+	
+	for (int i = 100; i < 130; i++) {
+		NSString *path = [NSString stringWithFormat:@"tiles/nurseispygypsiesrun%i/nurseispygypsiesrun%i", i, i];
+		[builder addObject:path];
+	}
+	
+	NSArray *extensions = [[NSArray alloc] initWithArray:builder];
+	[builder release];
+	
 	[self loadFormaOverlaysWithDirs:extensions];
 	[extensions release];
 	
@@ -134,7 +159,7 @@
 	[self.map setVisibleMapRect:visibleRect animated:YES];
 	[self loadAnnotationsForMapRegion:self.map.region];
 
-    [overlay release];
+//    [overlay release];
 	
 	[self loadSliderHover];
 
@@ -185,6 +210,7 @@
 		NSMutableSet *pointsToShow = [NSMutableSet setWithSet:sourceClusters];
 		pointsShowing = [NSMutableSet setWithArray:self.map.annotations];
 		[pointsShowing minusSet:pointsToShow];
+		
 		[self.map removeAnnotations:[pointsShowing allObjects]];
 	}
 }
@@ -197,24 +223,21 @@
 
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(AnnotationCluster *) cluster;
 {
-	MKPinAnnotationView *annView = [[MKPinAnnotationView alloc] initWithAnnotation:cluster reuseIdentifier:@"currentloc"];
-
 	if ([cluster annotationCount] == 1) {
+		MKPinAnnotationView *annView = [[MKPinAnnotationView alloc] initWithAnnotation:cluster reuseIdentifier:@"currentloc"];
 		annView.pinColor = MKPinAnnotationColorGreen;
+		annView.animatesDrop = FALSE;
+		annView.canShowCallout = YES;
+		annView.calloutOffset = CGPointMake(-5, 5);
+		return annView;
 	}
 	else {
-		annView.pinColor = MKPinAnnotationColorPurple;
+		NSString *reuseID = [NSString stringWithFormat:@"quintile%i", [cluster quintile]];	
+		NSString *countText = [NSString stringWithFormat:@"%i", [cluster annotationCount]];
+		AnnotationClusterView *clusterView = [[AnnotationClusterView alloc] initWithAnnotation:cluster reuseIdentifier:reuseID];
+		[[clusterView clusterCount] setText:countText];
+		return clusterView;
 	}
-	
-	annView.animatesDrop = FALSE;
-	annView.canShowCallout = YES;
-	annView.calloutOffset = CGPointMake(-5, 5);
-	return annView;
-	
-//	MKAnnotationView *annView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"currentloc"];
-//    annView.canShowCallout = YES;
-//	annView.image = [UIImage imageNamed:@"bullseye.png"];
-//	return annView;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;

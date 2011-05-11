@@ -19,6 +19,7 @@
 @synthesize coordinate;
 @synthesize annotations;
 @synthesize mapView;
+@synthesize allMarkerCount;
 
 -(id) init;
 {
@@ -31,17 +32,19 @@
 	return self;
 }
 
--(id) initWithAnnotation:(<MKAnnotation>)annotation;
+-(id) initWithAnnotation:(<MKAnnotation>)annotation totalMarkers:(NSInteger)count;
 {
 	if ((self = [self init])) {
+		[self setAllMarkerCount:count];
 		[self addAnnotation:annotation];		
 	}
 	return self;
 }
 
--(id) initWithAnnotations:(NSArray *)annotationArray;
+-(id) initWithAnnotations:(NSArray *)annotationArray totalMarkers:(NSInteger)count;
 {
 	if ((self = [self init])) {
+		[self setAllMarkerCount:count];
 		[self addAnnotations:annotationArray];
 	}
 	return self;
@@ -62,6 +65,13 @@
 -(NSInteger) annotationCount;
 {
 	return [self.annotations count];
+}
+
+-(NSInteger) quintile;
+{
+	NSInteger quint = ceil(5 * ((CGFloat)[self annotationCount] / (CGFloat)self.allMarkerCount));
+	NSLog(@"Ann: %i, All: %i, Quint: %i", [self annotationCount], self.allMarkerCount, quint);
+	return quint;
 }
 
 -(BOOL) containsObject:(<MKAnnotation>)anObject;

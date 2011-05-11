@@ -11,18 +11,21 @@
 @interface AnnotationCluster : NSObject <MKAnnotation> {
 	NSMutableSet *annotations;
 	MKMapView *mapView;
+	NSInteger allMarkerCount;
 }
 
 @property (nonatomic, assign) MKMapView *mapView;
 @property (nonatomic, retain) NSMutableSet *annotations;
+@property NSInteger allMarkerCount;
 
--(id) initWithAnnotation:(<MKAnnotation>)annotation;
--(id) initWithAnnotations:(NSArray *)annotationArray;
+-(id) initWithAnnotation:(<MKAnnotation>)annotation totalMarkers:(NSInteger)count;
+-(id) initWithAnnotations:(NSArray *)annotationArray totalMarkers:(NSInteger)count;
 
 -(void) addAnnotation:(<MKAnnotation>)annotation;
 -(void) addAnnotations:(NSArray *)annotationArray;
 
 -(NSInteger) annotationCount;
+-(NSInteger) quintile;
 -(BOOL) containsObject:(<MKAnnotation>)anObject;
 -(void) updateCenter;
 

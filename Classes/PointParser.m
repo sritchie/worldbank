@@ -98,6 +98,7 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale)
 		self.zoomLevel = currentZoomLevel;
 
 		NSMutableSet *newClusters = [[NSMutableSet alloc] initWithCapacity:50];
+		NSInteger total = [self.formaPoints count];
 		
 		for (FormaAnnotation *annotation in self.formaPoints) {
 			BOOL withinCluster = NO;
@@ -111,7 +112,7 @@ static NSInteger zoomScaleToZoomLevel(MKZoomScale scale)
 			}
 			
 			if (!withinCluster) {
-				AnnotationCluster *newCluster = [[AnnotationCluster alloc] initWithAnnotation:annotation];
+				AnnotationCluster *newCluster = [[AnnotationCluster alloc] initWithAnnotation:annotation totalMarkers:total];
 				[newClusters addObject:newCluster];
 				[newCluster release];
 			}

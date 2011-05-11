@@ -8,7 +8,7 @@
 #define kTileCacheName @"MapTileCache"
 
 #define TILE_SIZE 256.0
-#define kMaxFormaZoomLevel 8
+#define kMaxFormaZoomLevel 7
 
 #ifndef __IPHONE_3_2	// if iPhoneOS is 3.2 or greater then __IPHONE_3_2 will be defined
 

@@ -9,7 +9,9 @@
 #import <MapKit/MapKit.h>
 
 @interface AnnotationClusterView : MKAnnotationView {
-
+	UILabel *clusterCount;
 }
+
+@property (nonatomic, retain) UILabel *clusterCount;
 
 @end

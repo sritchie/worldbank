@@ -33,6 +33,9 @@
 @property (nonatomic, retain) NSArray *formaLayers;
 @property NSInteger currentLayer;
 
+-(void)fadeOut:(UIView*)viewToDissolve withDuration:(NSTimeInterval)duration;
+-(void)fadeIn:(UIView*)viewToFadeIn withDuration:(NSTimeInterval)duration;
+
 -(IBAction) startedSliding:(id)sender;
 -(IBAction) finishedSliding:(id)sender;
 -(IBAction) showSliderPosition:(id)sender;

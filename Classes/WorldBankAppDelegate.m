@@ -40,9 +40,9 @@
     [queue release];
     
     TTURLCache *cache = [[TTURLCache alloc] initWithName:kTileCacheName];
-    cache.invalidationAge = 300.0f; // Five minutes
+    cache.invalidationAge = TT_CACHE_EXPIRATION_AGE_NEVER; // Five minutes
     [TTURLCache setSharedCache:cache];
-    [cache release];
+	TT_RELEASE_SAFELY(cache);
 }
 
 
